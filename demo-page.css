@@ -53,7 +53,7 @@ p,
 }
 
 [class^="hvr-"] {
-  margin: 6px;
+  margin: 10px;
   padding: 16px;
   cursor: pointer;
   background: #e1e1e1;
@@ -271,3 +271,26 @@ footer{
   }
   
 }
+
+
+
+
+
+
+
+
+/* 
+<code class=" language-css"><span class="token selector">[class^="hvr-"]</span> <span class="token punctuation">{</span>
+	<span class="token property">margin</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
+	<span class="token property">padding</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span>
+	<span class="token property">cursor</span><span class="token punctuation">:</span> pointer<span class="token punctuation">;</span>
+	<span class="token property">background</span><span class="token punctuation">:</span> #e1e1e1<span class="token punctuation">;</span>
+	<span class="token property">text-decoration</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+	<span class="token property">color</span><span class="token punctuation">:</span> black<span class="token punctuation">;</span>
+	<span class="token comment">/* Prevent highlight colour when element is tapped */</span>
+	<span class="token property">-webkit-tap-highlight-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span>0<span class="token punctuation">,</span>0<span class="token punctuation">,</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token comment">/* Smooth fonts */</span>
+	<span class="token property">-webkit-font-smoothing</span><span class="token punctuation">:</span> antialiased<span class="token punctuation">;</span>
+	<span class="token property">-moz-osx-font-smoothing</span><span class="token punctuation">:</span> grayscale<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code> */

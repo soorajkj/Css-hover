@@ -8,7 +8,7 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
 
 code[class*="language-"],
 pre[class*="language-"] {
-	color: #ccc;
+	color: var(--syntax-string-color);
 	background: none;
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
     height: 100%;
@@ -41,7 +41,8 @@ pre[class*="language-"] {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-	background: black;
+
+	background-color: var(--syntax-background-color);
 }
 
 /* Inline code */
@@ -77,14 +78,14 @@ pre[class*="language-"] {
 .token.boolean,
 .token.number,
 .token.function {
-	color: #00ff15;
+	color: var(--syntax-literal-color);
 }
 
 .token.property,
 .token.class-name,
 .token.constant,
 .token.symbol {
-	color: #ff0077;
+	color: var(--syntax-name-color);
 }
 
 .token.selector,
@@ -92,7 +93,8 @@ pre[class*="language-"] {
 .token.atrule,
 .token.keyword,
 .token.builtin {
-	color: #00e1ff;
+	color: var(--syntax-declaration-color);
+
 }
 
 .token.string,
@@ -125,3 +127,13 @@ pre[class*="language-"] {
 	color: green;
 }
 
+:root{
+--syntax-background-color: #08090a;
+--syntax-text-color: #f8f8f2;
+--syntax-comment-color: #808080;
+--syntax-declaration-color: #f39c12;
+--syntax-literal-color: #dda0dd;
+--syntax-error-color: #f9690e;
+--syntax-name-color: #7ed07e;
+--syntax-string-color: #f2ca27;
+}
