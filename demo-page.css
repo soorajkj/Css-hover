@@ -159,7 +159,7 @@ footer{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 30px;
+  padding: 10px 20px;
   border-radius: 5px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -233,9 +233,7 @@ footer{
   .popup-head{
     padding: 10px 20px;
   }
-  .popup pre{
-  padding:  0px 20px;
-  }
+  
   .techs{
     display: flex;
     background-color: rgb(218, 250, 231);

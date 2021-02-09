@@ -8,7 +8,7 @@ const styletitle = document.querySelector(".popup-head h2");
 
 const repeatCode = () =>{
 	cpitem.innerHTML=
-`<code class=" language-css"><span class="token selector">
+`<span class="token selector">
 *:focus</span><span class="token punctuation">{</span>
 	<span class="token property">outline</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
@@ -24,7 +24,7 @@ const repeatCode = () =>{
 	<span class="token comment">/* Smooth fonts */</span>
 	<span class="token property">-webkit-font-smoothing</span><span class="token punctuation">:</span> antialiased<span class="token punctuation">;</span>
 	<span class="token property">-moz-osx-font-smoothing</span><span class="token punctuation">:</span> grayscale<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>
+<span class="token punctuation">}</span>
 `
 
 
@@ -56,9 +56,10 @@ effectsButtons.forEach((button =>{
         if(e.target.className === "hvr-grow"){
             repeatFun();
             styletitle.innerHTML = "Grow";
-			repeatCode();
-            cpitem.innerHTML+=`<code class=" language-css"><span class="token selector">.hvr-grow</span> <span class="token punctuation">{</span>
-	<span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+			      repeatCode();
+            cpitem.innerHTML+=
+`<span class="token selector">.hvr-grow</span> <span class="token punctuation">{</span>
+	  <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
     <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -78,24 +79,24 @@ effectsButtons.forEach((button =>{
         if(e.target.className === "hvr-shrink"){
             repeatFun();
             styletitle.innerHTML = "Shrink";
-			repeatCode();
+			      repeatCode();
             cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-shrink</span> <span class="token punctuation">{</span>
-	<span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
-	<span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
-	<span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
-	<span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
-	<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
-	<span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 0 1px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">)</span><span class="token punctuation">;</span>
-	<span class="token property">-webkit-transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
-	<span class="token property">transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
-	<span class="token property">-webkit-transition-property</span><span class="token punctuation">:</span> transform<span class="token punctuation">;</span>
-	<span class="token property">transition-property</span><span class="token punctuation">:</span> transform<span class="token punctuation">;</span>
+`<span class="token selector">.hvr-shrink</span> <span class="token punctuation">{</span>
+    <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+    <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
+    <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 0 1px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">-webkit-transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+    <span class="token property">transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+    <span class="token property">-webkit-transition-property</span><span class="token punctuation">:</span> transform<span class="token punctuation">;</span>
+    <span class="token property">transition-property</span><span class="token punctuation">:</span> transform<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 <span class="token selector">.hvr-shrink:hover, .hvr-shrink:focus, .hvr-shrink:active</span> <span class="token punctuation">{</span>
 	<span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>0.9<span class="token punctuation">)</span><span class="token punctuation">;</span>
 	<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>0.9<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>`
+<span class="token punctuation">}</span>`
 
         }
         // 3
@@ -104,7 +105,7 @@ effectsButtons.forEach((button =>{
             styletitle.innerHTML = "Pulse";
             repeatCode();
             cpitem.innerHTML +=
-            `<code class=" language-css"><span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-pulse</span> <span class="token punctuation">{</span>
+            `<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-pulse</span> <span class="token punctuation">{</span>
 	<span class="token selector">25%</span> <span class="token punctuation">{</span>
 		<span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>1.1<span class="token punctuation">)</span><span class="token punctuation">;</span>
 		<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>1.1<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -123,7 +124,7 @@ effectsButtons.forEach((button =>{
 		<span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>0.9<span class="token punctuation">)</span><span class="token punctuation">;</span>
 		<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>0.9<span class="token punctuation">)</span><span class="token punctuation">;</span>
 	<span class="token punctuation">}</span>
-	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 <span class="token selector">.hvr-pulse</span> <span class="token punctuation">{</span>
 	<span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
@@ -131,7 +132,7 @@ effectsButtons.forEach((button =>{
     <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 0 1px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">)</span><span class="token punctuation">;</span>
-	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 <span class="token selector">.hvr-pulse:hover, .hvr-pulse:focus, .hvr-pulse:active</span> <span class="token punctuation">{</span>
     <span class="token property">-webkit-animation-name</span><span class="token punctuation">:</span> hvr-pulse<span class="token punctuation">;</span>
     <span class="token property">animation-name</span><span class="token punctuation">:</span> hvr-pulse<span class="token punctuation">;</span>
@@ -150,7 +151,7 @@ effectsButtons.forEach((button =>{
             styletitle.innerHTML = "Pulse Grow";
 			repeatCode();
             cpitem.innerHTML +=
-`<code class=" language-css"><span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-pulse-grow</span> <span class="token punctuation">{</span>
+`<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-pulse-grow</span> <span class="token punctuation">{</span>
     <span class="token selector">to</span> <span class="token punctuation">{</span>
         <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>1.1<span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>1.1<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -190,7 +191,7 @@ effectsButtons.forEach((button =>{
             styletitle.innerHTML = "Pulse Shrink"; 
 			repeatCode();
             cpitem.innerHTML +=
-`<code class=" language-css"><span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-pulse-shrink</span> <span class="token punctuation">{</span>
+`<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-pulse-shrink</span> <span class="token punctuation">{</span>
     <span class="token selector">to</span> <span class="token punctuation">{</span>
         <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>0.9<span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>0.9<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -230,7 +231,7 @@ effectsButtons.forEach((button =>{
         styletitle.innerHTML = "Push";
 		repeatCode();
         cpitem.innerHTML +=
-`<code class=" language-css"><span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-push</span> <span class="token punctuation">{</span>
+`<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-push</span> <span class="token punctuation">{</span>
     <span class="token selector">50%</span> <span class="token punctuation">{</span>
         <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>0.8<span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>0.8<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -276,7 +277,7 @@ effectsButtons.forEach((button =>{
         styletitle.innerHTML = "Pop";
 		repeatCode();
         cpitem.innerHTML +=
-`<code class=" language-css"><span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-pop</span> <span class="token punctuation">{</span>
+`<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-pop</span> <span class="token punctuation">{</span>
 	<span class="token selector">50%</span> <span class="token punctuation">{</span>
 	<span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>1.2<span class="token punctuation">)</span><span class="token punctuation">;</span>
 	<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>1.2<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -315,7 +316,7 @@ effectsButtons.forEach((button =>{
         styletitle.innerHTML = ("Bounce In");
 		repeatCode();
         cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-bounce-in</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-bounce-in</span> <span class="token punctuation">{</span>
 	<span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -339,7 +340,7 @@ effectsButtons.forEach((button =>{
         styletitle.innerHTML = "Bounce Out";
 		repeatCode();
         cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-bounce-out</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-bounce-out</span> <span class="token punctuation">{</span>
 	<span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -364,7 +365,7 @@ effectsButtons.forEach((button =>{
         styletitle.innerHTML = "Rotate";
 		repeatCode();
         cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-rotate</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-rotate</span> <span class="token punctuation">{</span>
 	<span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
 	<span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
 	<span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -388,7 +389,7 @@ effectsButtons.forEach((button =>{
         styletitle.innerHTML = "Grow Rotate";
 		repeatCode();
         cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-grow-rotate</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-grow-rotate</span> <span class="token punctuation">{</span>
 	<span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
 	<span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
 	<span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -412,7 +413,7 @@ effectsButtons.forEach((button =>{
         styletitle.innerHTML = "Float";
 		repeatCode();
         cpitem.innerHTML += 
-`<code class=" language-css"><span class="token selector">.hvr-float</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-float</span> <span class="token punctuation">{</span>
 	<span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -440,7 +441,7 @@ effectsButtons.forEach((button =>{
         styletitle.innerHTML = "Sink";
 		repeatCode();
         cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-sink</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-sink</span> <span class="token punctuation">{</span>
 	<span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
 	<span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
 	<span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -468,7 +469,7 @@ effectsButtons.forEach((button =>{
         styletitle.innerHTML = "Bob";
 		repeatCode();
         cpitem.innerHTML +=
-`<code class=" language-css"><span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-bob</span> <span class="token punctuation">{</span>
+`<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-bob</span> <span class="token punctuation">{</span>
 	<span class="token selector">0%</span> <span class="token punctuation">{</span>
 	  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>-8px<span class="token punctuation">)</span><span class="token punctuation">;</span>
 	  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>-8px<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -541,7 +542,7 @@ effectsButtons.forEach((button =>{
         styletitle.innerHTML = "Hang";
 		repeatCode();
         cpitem.innerHTML +=
-`<code class=" language-css"><span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-hang</span> <span class="token punctuation">{</span>
+`<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-hang</span> <span class="token punctuation">{</span>
 	<span class="token selector">0%</span> <span class="token punctuation">{</span>
 	  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>8px<span class="token punctuation">)</span><span class="token punctuation">;</span>
 	  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>8px<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -613,7 +614,7 @@ effectsButtons.forEach((button =>{
         styletitle.innerHTML = "Skew";
 		repeatCode();
         cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-skew</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-skew</span> <span class="token punctuation">{</span>
 	<span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
 	<span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
 	<span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -638,7 +639,7 @@ effectsButtons.forEach((button =>{
         styletitle.innerHTML = "Skew Forward";
 		repeatCode();
         cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-skew-forward</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-skew-forward</span> <span class="token punctuation">{</span>
 	<span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
 	<span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
 	<span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -665,7 +666,7 @@ effectsButtons.forEach((button =>{
         styletitle.innerHTML = "Skew Backward";
 		repeatCode();
         cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-skew-backward</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-skew-backward</span> <span class="token punctuation">{</span>
 	<span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
 	<span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
 	<span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -692,7 +693,7 @@ effectsButtons.forEach((button =>{
         styletitle.innerHTML = "Wobble Horizontal";
 		repeatCode();
         cpitem.innerHTML += 
-`<code class=" language-css"><span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-wobble-horizontal</span> <span class="token punctuation">{</span>
+`<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-wobble-horizontal</span> <span class="token punctuation">{</span>
 	<span class="token selector">16.65%</span> <span class="token punctuation">{</span>
 	  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span>8px<span class="token punctuation">)</span><span class="token punctuation">;</span>
 	  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span>8px<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -771,7 +772,7 @@ effectsButtons.forEach((button =>{
       	styletitle.innerHTML = "Wobble Vertical";
 		repeatCode();
       	cpitem.innerHTML +=
-`<code class=" language-css"><span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-wobble-vertical</span> <span class="token punctuation">{</span>
+`<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-wobble-vertical</span> <span class="token punctuation">{</span>
 	<span class="token selector">16.65%</span> <span class="token punctuation">{</span>
 	  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>8px<span class="token punctuation">)</span><span class="token punctuation">;</span>
 	  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>8px<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -850,7 +851,7 @@ effectsButtons.forEach((button =>{
       styletitle.innerHTML = "Wobble To Bottom Right";
 	  repeatCode();
       cpitem.innerHTML +=
-`<code class=" language-css"><span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-wobble-to-bottom-right</span> <span class="token punctuation">{</span>
+`<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-wobble-to-bottom-right</span> <span class="token punctuation">{</span>
 	<span class="token selector">16.65%</span> <span class="token punctuation">{</span>
 	  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">translate</span><span class="token punctuation">(</span>8px<span class="token punctuation">,</span> 8px<span class="token punctuation">)</span><span class="token punctuation">;</span>
 	  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translate</span><span class="token punctuation">(</span>8px<span class="token punctuation">,</span> 8px<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -929,7 +930,7 @@ effectsButtons.forEach((button =>{
       styletitle.innerHTML = "Wobble To Top Right";
 	  repeatCode();
       cpitem.innerHTML +=
-`<code class=" language-css"><span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-wobble-to-top-right</span> <span class="token punctuation">{</span>
+`<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-wobble-to-top-right</span> <span class="token punctuation">{</span>
 	<span class="token selector">16.65%</span> <span class="token punctuation">{</span>
 	  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">translate</span><span class="token punctuation">(</span>8px<span class="token punctuation">,</span> -8px<span class="token punctuation">)</span><span class="token punctuation">;</span>
 	  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translate</span><span class="token punctuation">(</span>8px<span class="token punctuation">,</span> -8px<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -1006,7 +1007,7 @@ effectsButtons.forEach((button =>{
       styletitle.innerHTML = "Wobble Top";
 	  repeatCode();
       cpitem.innerHTML +=
-`<code class=" language-css"><span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-wobble-top</span> <span class="token punctuation">{</span>
+`<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-wobble-top</span> <span class="token punctuation">{</span>
 	<span class="token selector">16.65%</span> <span class="token punctuation">{</span>
 	  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">skew</span><span class="token punctuation">(</span>-12deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
 	  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">skew</span><span class="token punctuation">(</span>-12deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -1086,7 +1087,7 @@ effectsButtons.forEach((button =>{
       styletitle.innerHTML = "Wobble Bottom";
 	  repeatCode();
       cpitem.innerHTML +=
-`<code class=" language-css"><span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-wobble-bottom</span> <span class="token punctuation">{</span>
+`<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-wobble-bottom</span> <span class="token punctuation">{</span>
 	<span class="token selector">16.65%</span> <span class="token punctuation">{</span>
 	  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">skew</span><span class="token punctuation">(</span>-12deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
 	  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">skew</span><span class="token punctuation">(</span>-12deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -1166,7 +1167,7 @@ effectsButtons.forEach((button =>{
       styletitle.innerHTML = "Wobble Skew";
 	  repeatCode();
       cpitem.innerHTML +=
-`<code class=" language-css"><span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-wobble-skew</span> <span class="token punctuation">{</span>
+`<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-wobble-skew</span> <span class="token punctuation">{</span>
 	<span class="token selector">16.65%</span> <span class="token punctuation">{</span>
 	  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">skew</span><span class="token punctuation">(</span>-12deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
 	  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">skew</span><span class="token punctuation">(</span>-12deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -1244,7 +1245,7 @@ effectsButtons.forEach((button =>{
       styletitle.innerHTML = "Buzz";
 	  repeatCode();
       cpitem.innerHTML +=
-`<code class=" language-css"><span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-buzz</span> <span class="token punctuation">{</span>
+`<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-buzz</span> <span class="token punctuation">{</span>
 	<span class="token selector">50%</span> <span class="token punctuation">{</span>
 	  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span>3px<span class="token punctuation">)</span> <span class="token function">rotate</span><span class="token punctuation">(</span>2deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
 	  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span>3px<span class="token punctuation">)</span> <span class="token function">rotate</span><span class="token punctuation">(</span>2deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -1290,7 +1291,7 @@ effectsButtons.forEach((button =>{
       styletitle.innerHTML = "Buzz Out";
 	  repeatCode();
       cpitem.innerHTML +=
-`<code class=" language-css"><span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-buzz-out</span> <span class="token punctuation">{</span>
+`<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-buzz-out</span> <span class="token punctuation">{</span>
 	<span class="token selector">10%</span> <span class="token punctuation">{</span>
 	  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span>3px<span class="token punctuation">)</span> <span class="token function">rotate</span><span class="token punctuation">(</span>2deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
 	  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span>3px<span class="token punctuation">)</span> <span class="token function">rotate</span><span class="token punctuation">(</span>2deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -1400,7 +1401,7 @@ effectsButtons.forEach((button =>{
       styletitle.innerHTML = "Forward";
 	  repeatCode();
       cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-forward</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-forward</span> <span class="token punctuation">{</span>
 	<span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
 	<span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
 	<span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -1424,7 +1425,7 @@ effectsButtons.forEach((button =>{
       styletitle.innerHTML = "Backward";
 	  repeatCode();
       cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-backward</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-backward</span> <span class="token punctuation">{</span>
 	<span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
 	<span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
 	<span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -1449,7 +1450,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Fade";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-fade</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-fade</span> <span class="token punctuation">{</span>
 	<span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -1475,7 +1476,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Back Pulse";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-back-pulse</span> <span class="token punctuation">{</span>
+`<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-back-pulse</span> <span class="token punctuation">{</span>
     <span class="token selector">50%</span> <span class="token punctuation">{</span>
       <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token function">rgb</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 255<span class="token punctuation">,</span> 166<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
@@ -1521,7 +1522,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Sweep To Right";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-sweep-to-right</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-sweep-to-right</span> <span class="token punctuation">{</span>
 	<span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -1570,7 +1571,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Sweep To Left";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-sweep-to-left</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-sweep-to-left</span> <span class="token punctuation">{</span>
 	<span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -1619,7 +1620,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Sweep To Bottom";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-sweep-to-bottom</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-sweep-to-bottom</span> <span class="token punctuation">{</span>
 	<span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -1668,7 +1669,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Sweep To Top";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-sweep-to-top</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-sweep-to-top</span> <span class="token punctuation">{</span>
 	<span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -1717,7 +1718,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Bounce To Right";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-bounce-to-right</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-bounce-to-right</span> <span class="token punctuation">{</span>
 	<span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -1768,7 +1769,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Bounce To Left";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-bounce-to-left</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-bounce-to-left</span> <span class="token punctuation">{</span>
 	<span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -1819,7 +1820,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Bounce To Bottom";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-bounce-to-bottom</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-bounce-to-bottom</span> <span class="token punctuation">{</span>
 	<span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -1870,7 +1871,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Bounce To Top";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-bounce-to-top</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-bounce-to-top</span> <span class="token punctuation">{</span>
 	<span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -1921,7 +1922,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Radial Out";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-radial-out</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-radial-out</span> <span class="token punctuation">{</span>
 	<span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -1971,7 +1972,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Radial In";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-radial-in</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-radial-in</span> <span class="token punctuation">{</span>
     <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -2019,7 +2020,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Rectangle In";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-rectangle-in</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-rectangle-in</span> <span class="token punctuation">{</span>
     <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -2066,7 +2067,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Rectangle Out";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-rectangle-out</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-rectangle-out</span> <span class="token punctuation">{</span>
     <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -2113,7 +2114,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Shutter In Horizontal";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-shutter-in-horizontal</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-shutter-in-horizontal</span> <span class="token punctuation">{</span>
     <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -2162,7 +2163,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Shutter Out Horizontal";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-shutter-out-horizontal</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-shutter-out-horizontal</span> <span class="token punctuation">{</span>
     <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -2211,7 +2212,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Shutter In Vertical";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-shutter-in-vertical</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-shutter-in-vertical</span> <span class="token punctuation">{</span>
     <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -2260,7 +2261,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Shutter Out Vertical";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-shutter-out-vertical</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-shutter-out-vertical</span> <span class="token punctuation">{</span>
     <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -2309,7 +2310,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Icon Back";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-icon-back</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-icon-back</span> <span class="token punctuation">{</span>
     <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -2341,7 +2342,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Icon Forward";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-icon-forward</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-icon-forward</span> <span class="token punctuation">{</span>
     <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -2373,7 +2374,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Icon Down";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-down</span> <span class="token punctuation">{</span>
+`<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-down</span> <span class="token punctuation">{</span>
     <span class="token selector">0%,
       50%,
       100%</span> <span class="token punctuation">{</span>
@@ -2427,7 +2428,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Icon Up";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-up</span> <span class="token punctuation">{</span>
+`<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-up</span> <span class="token punctuation">{</span>
     <span class="token selector">0%,
       50%,
       100%</span> <span class="token punctuation">{</span>
@@ -2481,7 +2482,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Icon Spin";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-icon-spin</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-icon-spin</span> <span class="token punctuation">{</span>
     <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -2509,7 +2510,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Icon Drop";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-drop</span> <span class="token punctuation">{</span>
+`<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-drop</span> <span class="token punctuation">{</span>
     <span class="token selector">0%</span> <span class="token punctuation">{</span>
       <span class="token property">opacity</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
@@ -2574,7 +2575,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Icon Fade";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-icon-fade</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-icon-fade</span> <span class="token punctuation">{</span>
     <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -2601,7 +2602,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Icon Float Away";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-float-away</span> <span class="token punctuation">{</span>
+`<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-float-away</span> <span class="token punctuation">{</span>
     <span class="token selector">0%</span> <span class="token punctuation">{</span>
       <span class="token property">opacity</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
@@ -2651,7 +2652,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Icon Sink Away";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-sink-away</span> <span class="token punctuation">{</span>
+`<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-sink-away</span> <span class="token punctuation">{</span>
     <span class="token selector">0%</span> <span class="token punctuation">{</span>
       <span class="token property">opacity</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
@@ -2701,7 +2702,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Icon Grow";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-icon-grow</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-icon-grow</span> <span class="token punctuation">{</span>
     <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -2733,7 +2734,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Icon Shrink";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-icon-shrink</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-icon-shrink</span> <span class="token punctuation">{</span>
     <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -2765,7 +2766,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Icon Pulse";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-pulse</span> <span class="token punctuation">{</span>
+`<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-pulse</span> <span class="token punctuation">{</span>
     <span class="token selector">25%</span> <span class="token punctuation">{</span>
       <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>1.3<span class="token punctuation">)</span><span class="token punctuation">;</span>
       <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>1.3<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -2817,7 +2818,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Icon Pulse Grow";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-pulse-grow</span> <span class="token punctuation">{</span>
+`<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-pulse-grow</span> <span class="token punctuation">{</span>
     <span class="token selector">to</span> <span class="token punctuation">{</span>
       <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>1.3<span class="token punctuation">)</span><span class="token punctuation">;</span>
       <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>1.3<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -2863,7 +2864,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Icon Pulse Shrink";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-pulse-shrink</span> <span class="token punctuation">{</span>
+`<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-pulse-shrink</span> <span class="token punctuation">{</span>
     <span class="token selector">to</span> <span class="token punctuation">{</span>
       <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>0.8<span class="token punctuation">)</span><span class="token punctuation">;</span>
       <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>0.8<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -2909,7 +2910,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Icon Push";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-push</span> <span class="token punctuation">{</span>
+`<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-push</span> <span class="token punctuation">{</span>
     <span class="token selector">50%</span> <span class="token punctuation">{</span>
       <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>0.5<span class="token punctuation">)</span><span class="token punctuation">;</span>
       <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>0.5<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -2958,7 +2959,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Icon Pop";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-pop</span> <span class="token punctuation">{</span>
+`<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-pop</span> <span class="token punctuation">{</span>
     <span class="token selector">50%</span> <span class="token punctuation">{</span>
       <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>1.5<span class="token punctuation">)</span><span class="token punctuation">;</span>
       <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>1.5<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -3008,7 +3009,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Icon Bounce";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-icon-bounce</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-icon-bounce</span> <span class="token punctuation">{</span>
     <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -3042,7 +3043,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Icon Rotate";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-icon-rotate</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-icon-rotate</span> <span class="token punctuation">{</span>
     <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -3074,7 +3075,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Icon Grow Rotate";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-icon-grow-rotate</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-icon-grow-rotate</span> <span class="token punctuation">{</span>
     <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -3106,7 +3107,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Icon Float";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-icon-float</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-icon-float</span> <span class="token punctuation">{</span>
     <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -3138,7 +3139,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Icon sink";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-icon-sink</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-icon-sink</span> <span class="token punctuation">{</span>
     <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -3170,7 +3171,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Icon Bob";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-bob</span> <span class="token punctuation">{</span>
+`<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-bob</span> <span class="token punctuation">{</span>
     <span class="token selector">0%</span> <span class="token punctuation">{</span>
       <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>-6px<span class="token punctuation">)</span><span class="token punctuation">;</span>
       <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>-6px<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -3248,7 +3249,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Icon Hang";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-hang</span> <span class="token punctuation">{</span>
+`<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-hang</span> <span class="token punctuation">{</span>
     <span class="token selector">0%</span> <span class="token punctuation">{</span>
       <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>6px<span class="token punctuation">)</span><span class="token punctuation">;</span>
       <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>6px<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -3356,7 +3357,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Icon Wobble Horizontal";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-wobble-horizontal</span> <span class="token punctuation">{</span>
+`<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-wobble-horizontal</span> <span class="token punctuation">{</span>
     <span class="token selector">16.65%</span> <span class="token punctuation">{</span>
       <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span>6px<span class="token punctuation">)</span><span class="token punctuation">;</span>
       <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span>6px<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -3440,7 +3441,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Icon Wobble Vertical";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-wobble-vertical</span> <span class="token punctuation">{</span>
+`<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-wobble-vertical</span> <span class="token punctuation">{</span>
     <span class="token selector">16.65%</span> <span class="token punctuation">{</span>
       <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>6px<span class="token punctuation">)</span><span class="token punctuation">;</span>
       <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>6px<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -3524,7 +3525,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Icon Buzz";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-buzz</span> <span class="token punctuation">{</span>
+`<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-buzz</span> <span class="token punctuation">{</span>
     <span class="token selector">50%</span> <span class="token punctuation">{</span>
       <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span>3px<span class="token punctuation">)</span> <span class="token function">rotate</span><span class="token punctuation">(</span>2deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
       <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span>3px<span class="token punctuation">)</span> <span class="token function">rotate</span><span class="token punctuation">(</span>2deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -3576,7 +3577,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Icon Buzz Out";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-buzz-out</span> <span class="token punctuation">{</span>
+`<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-buzz-out</span> <span class="token punctuation">{</span>
     <span class="token selector">10%</span> <span class="token punctuation">{</span>
       <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span>3px<span class="token punctuation">)</span> <span class="token function">rotate</span><span class="token punctuation">(</span>2deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
       <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span>3px<span class="token punctuation">)</span> <span class="token function">rotate</span><span class="token punctuation">(</span>2deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -3692,7 +3693,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Border Fade";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-border-fade</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-border-fade</span> <span class="token punctuation">{</span>
     <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -3718,7 +3719,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Hollow";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-hollow</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-hollow</span> <span class="token punctuation">{</span>
     <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -3742,7 +3743,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Trim";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-trim</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-trim</span> <span class="token punctuation">{</span>
     <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -3775,7 +3776,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Ripple Out";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-ripple-out</span> <span class="token punctuation">{</span>
+`<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-ripple-out</span> <span class="token punctuation">{</span>
     <span class="token selector">100%</span> <span class="token punctuation">{</span>
       <span class="token property">top</span><span class="token punctuation">:</span> -12px<span class="token punctuation">;</span>
       <span class="token property">right</span><span class="token punctuation">:</span> -12px<span class="token punctuation">;</span>
@@ -3824,7 +3825,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Ripple In";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-ripple-in</span> <span class="token punctuation">{</span>
+`<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-ripple-in</span> <span class="token punctuation">{</span>
     <span class="token selector">100%</span> <span class="token punctuation">{</span>
       <span class="token property">top</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
       <span class="token property">right</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
@@ -3874,7 +3875,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Outline Out";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-outline-out</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-outline-out</span> <span class="token punctuation">{</span>
     <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -3909,7 +3910,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Outline In";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-outline-in</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-outline-in</span> <span class="token punctuation">{</span>
     <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -3947,7 +3948,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Round Corners";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-round-corners</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-round-corners</span> <span class="token punctuation">{</span>
     <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -3969,7 +3970,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Underline From Left";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-underline-from-left</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-underline-from-left</span> <span class="token punctuation">{</span>
     <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -4005,7 +4006,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Underline From Center";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-underline-from-center</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-underline-from-center</span> <span class="token punctuation">{</span>
     <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -4042,7 +4043,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Underline From Right";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-underline-from-right</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-underline-from-right</span> <span class="token punctuation">{</span>
     <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -4078,7 +4079,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Overline From Left";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-overline-from-left</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-overline-from-left</span> <span class="token punctuation">{</span>
     <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -4114,7 +4115,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Overline From Center";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-overline-from-center</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-overline-from-center</span> <span class="token punctuation">{</span>
     <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -4151,7 +4152,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Overline From Right";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-overline-from-right</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-overline-from-right</span> <span class="token punctuation">{</span>
     <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -4187,7 +4188,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Reveal";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-reveal</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-reveal</span> <span class="token punctuation">{</span>
     <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -4227,7 +4228,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Underline Reveal";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-underline-reveal</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-underline-reveal</span> <span class="token punctuation">{</span>
     <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
@@ -4266,7 +4267,7 @@ effectsButtons.forEach((button =>{
 		styletitle.innerHTML = "Overline Reveal";
 		repeatCode();
 		cpitem.innerHTML +=
-`<code class=" language-css"><span class="token selector">.hvr-overline-reveal</span> <span class="token punctuation">{</span>
+`<span class="token selector">.hvr-overline-reveal</span> <span class="token punctuation">{</span>
     <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
     <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
     <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
