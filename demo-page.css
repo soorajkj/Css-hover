@@ -61,7 +61,6 @@ p,
   color: black;
   /* Prevent highlight colour when element is tapped */
   -webkit-tap-highlight-color: rgba(0,0,0,0);
-
   /* Smooth fonts */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -75,7 +74,7 @@ a {
 footer{
   background-color: #030705;
   color: #ffffff;
-  padding: 20px 10px 5px;
+  padding: 20px;
 }
 
 .social{
@@ -86,18 +85,14 @@ footer{
 
 .social-icon{
   margin: 5px;
-  padding: 10px;
+  padding: 20px 10px 20px 10px ;
   font-size: 23px;
   cursor: pointer;
   color: rgb(126, 126, 126);
 }
 
 .social-icon i:hover{
-  color: rgb(255, 255, 255);
-}
-
-.social-icon i:visited{
-  color: rgb(136, 134, 134);
+  color: rgb(241, 241, 241);
 }
 
 .copyright{
@@ -106,10 +101,6 @@ footer{
   font-size: 11px;
 }
 
-.author{
-  font-size: 11px;
-  text-decoration: underline;
-}
 
 /* popup */
 .popup-wrapper{
@@ -121,7 +112,7 @@ footer{
   bottom: 0;
   right: 0;
   z-index: 100;
-  background-color: rgba(0, 0, 0, 0.589);
+  background-color: rgba(0, 0, 0, 0.802);
   visibility: hidden;
   opacity: 0;
   transition: all ease-in 250ms;
@@ -156,7 +147,6 @@ footer{
   transform: translate(-50%,-50%);
   border-radius: 5px;
   overflow: hidden;
-  padding: 50px 0px;
 }
 
 ::-webkit-scrollbar{
@@ -169,7 +159,10 @@ footer{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 30px;
+  padding: 5px 30px;
+  border-radius: 5px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 .popup-head h2{
   margin: 0;
@@ -238,10 +231,10 @@ footer{
     width: 95%;
   }
   .popup-head{
-    padding: 10px;
+    padding: 10px 20px;
   }
   .popup pre{
-  padding: 20px 10px;
+  padding:  0px 20px;
   }
   .techs{
     display: flex;
@@ -271,26 +264,3 @@ footer{
   }
   
 }
-
-
-
-
-
-
-
-
-/* 
-<code class=" language-css"><span class="token selector">[class^="hvr-"]</span> <span class="token punctuation">{</span>
-	<span class="token property">margin</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
-	<span class="token property">padding</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span>
-	<span class="token property">cursor</span><span class="token punctuation">:</span> pointer<span class="token punctuation">;</span>
-	<span class="token property">background</span><span class="token punctuation">:</span> #e1e1e1<span class="token punctuation">;</span>
-	<span class="token property">text-decoration</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
-	<span class="token property">color</span><span class="token punctuation">:</span> black<span class="token punctuation">;</span>
-	<span class="token comment">/* Prevent highlight colour when element is tapped */</span>
-	<span class="token property">-webkit-tap-highlight-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span>0<span class="token punctuation">,</span>0<span class="token punctuation">,</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-	<span class="token comment">/* Smooth fonts */</span>
-	<span class="token property">-webkit-font-smoothing</span><span class="token punctuation">:</span> antialiased<span class="token punctuation">;</span>
-	<span class="token property">-moz-osx-font-smoothing</span><span class="token punctuation">:</span> grayscale<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code> */

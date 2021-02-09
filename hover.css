@@ -3003,7 +3003,6 @@
     transform: translateY(6px);
   }
 }
-/* Icon Down */
 .hvr-icon-down {
   border: none;
   display: inline-block;
@@ -3052,7 +3051,6 @@
     transform: translateY(-6px);
   }
 }
-/* Icon Up */
 .hvr-icon-up {
   border: none;
   display: inline-block;
@@ -3125,7 +3123,6 @@
     opacity: 1;
   }
 }
-/* Icon Drop */
 .hvr-icon-drop {
   border: none;
   display: inline-block;
@@ -3198,7 +3195,6 @@
     transform: translateY(-1em);
   }
 }
-/* Icon Float Away */
 .hvr-icon-float-away {
   border: none;
   display: inline-block;
@@ -3243,7 +3239,6 @@
     transform: translateY(1em);
   }
 }
-/* Icon Sink Away */
 .hvr-icon-sink-away {
   border: none;
   display: inline-block;

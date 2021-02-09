@@ -29,25 +29,23 @@ pre[class*="language-"] {
 	-ms-hyphens: none;
 	hyphens: none;
     overflow: hidden;
+	padding: 0px 20px 80px;
 
 }
 
 /* Code blocks */
 pre[class*="language-"] {
-	padding: 20px;
 	overflow: scroll;
     scroll-behavior: smooth;
 }
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-
 	background-color: var(--syntax-background-color);
 }
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
-	/* padding: 10px; */
 	border-radius: 5px;
 	white-space: normal;
 }
@@ -128,7 +126,7 @@ pre[class*="language-"] {
 }
 
 :root{
---syntax-background-color: #08090a;
+--syntax-background-color: #020f1d;
 --syntax-text-color: #f8f8f2;
 --syntax-comment-color: #808080;
 --syntax-declaration-color: #f39c12;
