@@ -2,44 +2,28 @@
 const popupWrapper = document.querySelector("#popup-wrapper");
 
 const effectsButtons = document.querySelectorAll("#effects a");
+const effects = document.querySelector("#effects");
 
 const cpitem = document.querySelector("#cpitem");
 const styletitle = document.querySelector(".popup-head h2");
 
-const repeatCode = () =>{
-	cpitem.innerHTML=
-`<span class="token selector">
-*:focus</span><span class="token punctuation">{</span>
-	<span class="token property">outline</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token selector">[class^="hvr-"]</span> <span class="token punctuation">{</span>
-	<span class="token property">margin</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
-	<span class="token property">padding</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span>
-	<span class="token property">cursor</span><span class="token punctuation">:</span> pointer<span class="token punctuation">;</span>
-	<span class="token property">background</span><span class="token punctuation">:</span> #e1e1e1<span class="token punctuation">;</span>
-	<span class="token property">text-decoration</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
-	<span class="token property">color</span><span class="token punctuation">:</span> black<span class="token punctuation">;</span>
-	<span class="token comment">/* Prevent highlight colour when element is tapped */</span>
-	<span class="token property">-webkit-tap-highlight-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span>0<span class="token punctuation">,</span>0<span class="token punctuation">,</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
-	<span class="token comment">/* Smooth fonts */</span>
-	<span class="token property">-webkit-font-smoothing</span><span class="token punctuation">:</span> antialiased<span class="token punctuation">;</span>
-	<span class="token property">-moz-osx-font-smoothing</span><span class="token punctuation">:</span> grayscale<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-`
-
-
-}
-
-
-
-const repeatFun = () =>{
-      if(popupWrapper.classList.contains("popup-wrapper")){
-            popupWrapper.classList.add("popup-wrapper-open");
-            document.body.style.overflow = "hidden";
-        }
-}
-
 const popupClose = document.querySelector(".popup-close");
+const searchInput = document.querySelector('#findEffects');
+
+findBtn = (searchTerm) =>{
+  Array.from(effects.children)
+  .filter((term) => !term.innerText.toLowerCase().includes(searchTerm))
+  .forEach((term) => term.classList.add('hide'));
+  
+  Array.from(effects.children)
+  .filter((term) => term.innerText.toLowerCase().includes(searchTerm))
+  .forEach((term) => term.classList.remove('hide'));
+};
+
+searchInput.addEventListener("keyup", () =>{
+  const searchTerm = searchInput.findinput.value.toLowerCase().trim();
+  findBtn(searchTerm);
+});
 
 popupClose.addEventListener("click", () =>{
     if(popupWrapper.classList.contains("popup-wrapper-open")){
@@ -49,6 +33,35 @@ popupClose.addEventListener("click", () =>{
     }
 });
 
+
+  const repeatFun = () =>{
+    if(popupWrapper.classList.contains("popup-wrapper")){
+          popupWrapper.classList.add("popup-wrapper-open");
+          document.body.style.overflow = "hidden";
+      }
+}
+
+  const repeatCode = () =>{
+    cpitem.innerHTML=
+  `<span class="token selector">
+  *:focus</span><span class="token punctuation">{</span>
+    <span class="token property">outline</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token selector">[class^="hvr-"]</span> <span class="token punctuation">{</span>
+    <span class="token property">margin</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span>
+    <span class="token property">cursor</span><span class="token punctuation">:</span> pointer<span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span> #e1e1e1<span class="token punctuation">;</span>
+    <span class="token property">text-decoration</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> black<span class="token punctuation">;</span>
+    <span class="token comment">/* Prevent highlight colour when element is tapped */</span>
+    <span class="token property">-webkit-tap-highlight-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span>0<span class="token punctuation">,</span>0<span class="token punctuation">,</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">/* Smooth fonts */</span>
+    <span class="token property">-webkit-font-smoothing</span><span class="token punctuation">:</span> antialiased<span class="token punctuation">;</span>
+    <span class="token property">-moz-osx-font-smoothing</span><span class="token punctuation">:</span> grayscale<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  `
+  }
 
 effectsButtons.forEach((button =>{
     button.addEventListener("click", (e) =>{

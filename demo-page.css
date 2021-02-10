@@ -10,6 +10,9 @@
 ::selection{
   background-color: transparent;
 }
+html{
+  height: 100%;
+}
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -20,8 +23,8 @@ body {
   position: relative;
   width: 100%;
   font-weight: 400;
+  margin: 0;
 }
-
 body::-webkit-scrollbar {
   display: none;
 }
@@ -47,11 +50,7 @@ header{
 .branding span{
   padding: 0px 10px 0px 0px;
 }
-.branding img{
-  height: 40px;
-  width: auto;
-  margin-right: 10px;
-}
+
 header form{
   display: flex;
   padding: 5px;
@@ -80,11 +79,20 @@ header i{
   justify-content: space-evenly;
   align-items: center;
 }
+main{
+  min-height: 100vh;
+  display: grid;
+  flex-direction: column;
+  width: 100%;
+}
 
 .effects{
-  /* max-width: 1100px; */
+  max-width: 1100px;
   padding: 20px 20px 100px 20px;
   margin: 0 auto;
+}
+.effects .hide{
+  display: none;
 }
 
 .effects h2{
@@ -123,45 +131,37 @@ a {
 footer{
   background-color: #141516;
   color: #ffffff;
-  padding: 50px 30px;
-  display: grid;
   grid-template-areas: "social copyright";
-}
-.social-connect{
-  grid-area: socialconnect;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   display: flex;
-  justify-content: start;
-  padding: 20px 20px;
-  margin: 5px;
-  color: rgb(194, 194, 194);
-
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 30px;
+  margin-top: auto;
 }
+
 .social{
-  grid-area: social;
-  display: flex;
-  justify-content: start;
   color: rgb(194, 194, 194);
-
 }
-
 .social-icon{
   margin: 5px;
-  padding: 10px 20px ;
   font-size: 23px;
+  padding: 10px;
   cursor: pointer;
   color: rgb(194, 194, 194);
+}
+.social-icon:first-child{
+  padding-left: 0px;
 }
 .social-icon i:hover{
   color: white;
 }
-
 .copyright{
-  padding: 10px;
   color: rgb(177, 177, 177);
   font-size: 11px;
-  grid-area: copyright;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
 }
 
@@ -302,9 +302,9 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 40px 20px 5px 20px;
   }
   footer .social{
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 }
