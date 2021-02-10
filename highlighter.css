@@ -28,7 +28,7 @@ pre[class*="language-"] {
 	-moz-hyphens: none;
 	-ms-hyphens: none;
 	hyphens: none;
-    overflow: hidden;
+    overflow: scroll;
 	padding: 0px 20px 100px;
 
 }

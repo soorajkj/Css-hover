@@ -55,7 +55,7 @@ effectsButtons.forEach((button =>{
         e.preventDefault();
         if(e.target.className === "hvr-grow"){
             repeatFun();
-            styletitle.innerHTML = "Grow";
+            styletitle.innerHTML = e.target.innerText;
 			      repeatCode();
             cpitem.innerHTML+=
 `<span class="token selector">.hvr-grow</span> <span class="token punctuation">{</span>
@@ -73,12 +73,12 @@ effectsButtons.forEach((button =>{
 <span class="token selector">.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active</span> <span class="token punctuation">{</span>
     <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>1.1<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>1.1<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>`   
+<span class="token punctuation">}</span>`
         }
         // 2
         if(e.target.className === "hvr-shrink"){
             repeatFun();
-            styletitle.innerHTML = "Shrink";
+            styletitle.innerHTML = e.target.innerText;
 			      repeatCode();
             cpitem.innerHTML +=
 `<span class="token selector">.hvr-shrink</span> <span class="token punctuation">{</span>
@@ -102,7 +102,7 @@ effectsButtons.forEach((button =>{
         // 3
         if(e.target.className === "hvr-pulse"){
             repeatFun();
-            styletitle.innerHTML = "Pulse";
+            styletitle.innerHTML = e.target.innerText;
             repeatCode();
             cpitem.innerHTML +=
             `<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-pulse</span> <span class="token punctuation">{</span>
@@ -142,14 +142,14 @@ effectsButtons.forEach((button =>{
     <span class="token property">animation-timing-function</span><span class="token punctuation">:</span> linear<span class="token punctuation">;</span>
     <span class="token property">-webkit-animation-iteration-count</span><span class="token punctuation">:</span> infinite<span class="token punctuation">;</span>
     <span class="token property">animation-iteration-count</span><span class="token punctuation">:</span> infinite<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>`
+<span class="token punctuation">}</span>`
 
         }
         // 4
         if(e.target.className === "hvr-pulse-grow"){
             repeatFun();
-            styletitle.innerHTML = "Pulse Grow";
-			repeatCode();
+            styletitle.innerHTML = e.target.innerText;
+			      repeatCode();
             cpitem.innerHTML +=
 `<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-pulse-grow</span> <span class="token punctuation">{</span>
     <span class="token selector">to</span> <span class="token punctuation">{</span>
@@ -182,14 +182,14 @@ effectsButtons.forEach((button =>{
     <span class="token property">animation-iteration-count</span><span class="token punctuation">:</span> infinite<span class="token punctuation">;</span>
     <span class="token property">-webkit-animation-direction</span><span class="token punctuation">:</span> alternate<span class="token punctuation">;</span>
     <span class="token property">animation-direction</span><span class="token punctuation">:</span> alternate<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>`
+<span class="token punctuation">}</span>`
 
         }
         // 5
         if(e.target.className === "hvr-pulse-shrink"){
             repeatFun();
-            styletitle.innerHTML = "Pulse Shrink"; 
-			repeatCode();
+            styletitle.innerHTML = e.target.innerText;
+			      repeatCode();
             cpitem.innerHTML +=
 `<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-pulse-shrink</span> <span class="token punctuation">{</span>
     <span class="token selector">to</span> <span class="token punctuation">{</span>
@@ -222,14 +222,14 @@ effectsButtons.forEach((button =>{
     <span class="token property">animation-iteration-count</span><span class="token punctuation">:</span> infinite<span class="token punctuation">;</span>
     <span class="token property">-webkit-animation-direction</span><span class="token punctuation">:</span> alternate<span class="token punctuation">;</span>
     <span class="token property">animation-direction</span><span class="token punctuation">:</span> alternate<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>`
+<span class="token punctuation">}</span>`
 
     }
     //6
     if(e.target.className === "hvr-push"){
         repeatFun();
-        styletitle.innerHTML = "Push";
-		repeatCode();
+        styletitle.innerHTML = e.target.innerText;
+		    repeatCode();
         cpitem.innerHTML +=
 `<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-push</span> <span class="token punctuation">{</span>
     <span class="token selector">50%</span> <span class="token punctuation">{</span>
@@ -268,14 +268,14 @@ effectsButtons.forEach((button =>{
         <span class="token property">animation-timing-function</span><span class="token punctuation">:</span> linear<span class="token punctuation">;</span>
         <span class="token property">-webkit-animation-iteration-count</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
         <span class="token property">animation-iteration-count</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>`
+<span class="token punctuation">}</span>`
 
     }
     //7
     if(e.target.className === "hvr-pop"){
         repeatFun();
-        styletitle.innerHTML = "Pop";
-		repeatCode();
+        styletitle.innerHTML = e.target.innerText;
+        repeatCode();
         cpitem.innerHTML +=
 `<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-pop</span> <span class="token punctuation">{</span>
 	<span class="token selector">50%</span> <span class="token punctuation">{</span>
@@ -306,15 +306,15 @@ effectsButtons.forEach((button =>{
 	<span class="token property">animation-timing-function</span><span class="token punctuation">:</span> linear<span class="token punctuation">;</span>
 	<span class="token property">-webkit-animation-iteration-count</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
 	<span class="token property">animation-iteration-count</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>`
+<span class="token punctuation">}</span>`
 
     
     }
     //8
     if(e.target.className === "hvr-bounce-in"){
         repeatFun();
-        styletitle.innerHTML = ("Bounce In");
-		repeatCode();
+        styletitle.innerHTML = e.target.innerText;
+        repeatCode();
         cpitem.innerHTML +=
 `<span class="token selector">.hvr-bounce-in</span> <span class="token punctuation">{</span>
 	<span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
@@ -331,14 +331,14 @@ effectsButtons.forEach((button =>{
     <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>1.2<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token property">-webkit-transition-timing-function</span><span class="token punctuation">:</span> <span class="token function">cubic-bezier</span><span class="token punctuation">(</span>0.47<span class="token punctuation">,</span> 2.02<span class="token punctuation">,</span> 0.31<span class="token punctuation">,</span> -0.36<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token property">transition-timing-function</span><span class="token punctuation">:</span> <span class="token function">cubic-bezier</span><span class="token punctuation">(</span>0.47<span class="token punctuation">,</span> 2.02<span class="token punctuation">,</span> 0.31<span class="token punctuation">,</span> -0.36<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>`
+<span class="token punctuation">}</span>`
 
     }
     //9
     if(e.target.className ==="hvr-bounce-out"){
         repeatFun();
-        styletitle.innerHTML = "Bounce Out";
-		repeatCode();
+        styletitle.innerHTML = e.target.innerText;
+        repeatCode();
         cpitem.innerHTML +=
 `<span class="token selector">.hvr-bounce-out</span> <span class="token punctuation">{</span>
 	<span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
@@ -355,15 +355,15 @@ effectsButtons.forEach((button =>{
     <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>0.8<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token property">-webkit-transition-timing-function</span><span class="token punctuation">:</span> <span class="token function">cubic-bezier</span><span class="token punctuation">(</span>0.47<span class="token punctuation">,</span> 2.02<span class="token punctuation">,</span> 0.31<span class="token punctuation">,</span> -0.36<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token property">transition-timing-function</span><span class="token punctuation">:</span> <span class="token function">cubic-bezier</span><span class="token punctuation">(</span>0.47<span class="token punctuation">,</span> 2.02<span class="token punctuation">,</span> 0.31<span class="token punctuation">,</span> -0.36<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>`
+<span class="token punctuation">}</span>`
 
 
     }
     // 10
     if(e.target.className === "hvr-rotate"){
         repeatFun();
-        styletitle.innerHTML = "Rotate";
-		repeatCode();
+        styletitle.innerHTML = e.target.innerText;
+        repeatCode();
         cpitem.innerHTML +=
 `<span class="token selector">.hvr-rotate</span> <span class="token punctuation">{</span>
 	<span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
@@ -380,14 +380,14 @@ effectsButtons.forEach((button =>{
 <span class="token selector">.hvr-rotate:hover, .hvr-rotate:focus, .hvr-rotate:active</span> <span class="token punctuation">{</span>
 	<span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">rotate</span><span class="token punctuation">(</span>4deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
 	<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">rotate</span><span class="token punctuation">(</span>4deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>`
+<span class="token punctuation">}</span>`
 
     }
     // 11
     if(e.target.className === "hvr-grow-rotate"){
         repeatFun();
-        styletitle.innerHTML = "Grow Rotate";
-		repeatCode();
+        styletitle.innerHTML = e.target.innerText;
+        repeatCode();
         cpitem.innerHTML +=
 `<span class="token selector">.hvr-grow-rotate</span> <span class="token punctuation">{</span>
 	<span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
@@ -404,14 +404,14 @@ effectsButtons.forEach((button =>{
 <span class="token selector">.hvr-grow-rotate:hover, .hvr-grow-rotate:focus, .hvr-grow-rotate:active</span> <span class="token punctuation">{</span>
 	<span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>1.1<span class="token punctuation">)</span> <span class="token function">rotate</span><span class="token punctuation">(</span>4deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
 	<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>1.1<span class="token punctuation">)</span> <span class="token function">rotate</span><span class="token punctuation">(</span>4deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>`
+<span class="token punctuation">}</span>`
 
     }
     // 12
     if(e.target.className === "hvr-float"){
         repeatFun();
-        styletitle.innerHTML = "Float";
-		repeatCode();
+        styletitle.innerHTML = e.target.innerText;
+        repeatCode();
         cpitem.innerHTML += 
 `<span class="token selector">.hvr-float</span> <span class="token punctuation">{</span>
 	<span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
@@ -430,7 +430,7 @@ effectsButtons.forEach((button =>{
 <span class="token selector">.hvr-float:hover, .hvr-float:focus, .hvr-float:active</span> <span class="token punctuation">{</span>
     <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>-8px<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>-8px<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>`
+<span class="token punctuation">}</span>`
 
 
     
@@ -438,8 +438,8 @@ effectsButtons.forEach((button =>{
     //13
     if(e.target.className === "hvr-sink"){
         repeatFun();
-        styletitle.innerHTML = "Sink";
-		repeatCode();
+        styletitle.innerHTML = e.target.innerText;
+        repeatCode();
         cpitem.innerHTML +=
 `<span class="token selector">.hvr-sink</span> <span class="token punctuation">{</span>
 	<span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
@@ -458,7 +458,7 @@ effectsButtons.forEach((button =>{
 <span class="token selector">.hvr-sink:hover, .hvr-sink:focus, .hvr-sink:active</span> <span class="token punctuation">{</span>
 	<span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>8px<span class="token punctuation">)</span><span class="token punctuation">;</span>
 	<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>8px<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>`
+<span class="token punctuation">}</span>`
 
 
 
@@ -466,8 +466,8 @@ effectsButtons.forEach((button =>{
     // 14
     if(e.target.className === "hvr-bob"){
         repeatFun();
-        styletitle.innerHTML = "Bob";
-		repeatCode();
+        styletitle.innerHTML = e.target.innerText;
+        repeatCode();
         cpitem.innerHTML +=
 `<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-bob</span> <span class="token punctuation">{</span>
 	<span class="token selector">0%</span> <span class="token punctuation">{</span>
@@ -532,15 +532,15 @@ effectsButtons.forEach((button =>{
 	<span class="token property">animation-fill-mode</span><span class="token punctuation">:</span> forwards<span class="token punctuation">;</span>
 	<span class="token property">-webkit-animation-direction</span><span class="token punctuation">:</span> normal<span class="token punctuation">,</span> alternate<span class="token punctuation">;</span>
 	<span class="token property">animation-direction</span><span class="token punctuation">:</span> normal<span class="token punctuation">,</span> alternate<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>`
+<span class="token punctuation">}</span>`
 
 
     }
     // 15
     if(e.target.className === "hvr-hang"){
         repeatFun();
-        styletitle.innerHTML = "Hang";
-		repeatCode();
+        styletitle.innerHTML = e.target.innerText;
+        repeatCode();
         cpitem.innerHTML +=
 `<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-hang</span> <span class="token punctuation">{</span>
 	<span class="token selector">0%</span> <span class="token punctuation">{</span>
@@ -605,14 +605,14 @@ effectsButtons.forEach((button =>{
 	<span class="token property">animation-fill-mode</span><span class="token punctuation">:</span> forwards<span class="token punctuation">;</span>
 	<span class="token property">-webkit-animation-direction</span><span class="token punctuation">:</span> normal<span class="token punctuation">,</span> alternate<span class="token punctuation">;</span>
 	<span class="token property">animation-direction</span><span class="token punctuation">:</span> normal<span class="token punctuation">,</span> alternate<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>`
+<span class="token punctuation">}</span>`
 
 
     }// 16
     if(e.target.className === "hvr-skew"){
         repeatFun();
-        styletitle.innerHTML = "Skew";
-		repeatCode();
+        styletitle.innerHTML = e.target.innerText;
+        repeatCode();
         cpitem.innerHTML +=
 `<span class="token selector">.hvr-skew</span> <span class="token punctuation">{</span>
 	<span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
@@ -629,15 +629,15 @@ effectsButtons.forEach((button =>{
 <span class="token selector">.hvr-skew:hover, .hvr-skew:focus, .hvr-skew:active</span> <span class="token punctuation">{</span>
 	<span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">skew</span><span class="token punctuation">(</span>-10deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
 	<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">skew</span><span class="token punctuation">(</span>-10deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>`
+<span class="token punctuation">}</span>`
 
 
     }
     // 17
     if(e.target.className === "hvr-skew-forward"){
         repeatFun();
-        styletitle.innerHTML = "Skew Forward";
-		repeatCode();
+        styletitle.innerHTML = e.target.innerText;
+        repeatCode();
         cpitem.innerHTML +=
 `<span class="token selector">.hvr-skew-forward</span> <span class="token punctuation">{</span>
 	<span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
@@ -656,15 +656,15 @@ effectsButtons.forEach((button =>{
  <span class="token selector">.hvr-skew-forward:hover, .hvr-skew-forward:focus, .hvr-skew-forward:active</span> <span class="token punctuation">{</span>
 	<span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">skew</span><span class="token punctuation">(</span>-10deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
 	<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">skew</span><span class="token punctuation">(</span>-10deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>`
+<span class="token punctuation">}</span>`
 
 
     }
     // 18
     if(e.target.className === "hvr-skew-backward"){
         repeatFun();
-        styletitle.innerHTML = "Skew Backward";
-		repeatCode();
+        styletitle.innerHTML = e.target.innerText;
+        repeatCode();
         cpitem.innerHTML +=
 `<span class="token selector">.hvr-skew-backward</span> <span class="token punctuation">{</span>
 	<span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
@@ -683,15 +683,15 @@ effectsButtons.forEach((button =>{
 <span class="token selector">.hvr-skew-backward:hover, .hvr-skew-backward:focus, .hvr-skew-backward:active</span> <span class="token punctuation">{</span>
 	<span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">skew</span><span class="token punctuation">(</span>10deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
 	<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">skew</span><span class="token punctuation">(</span>10deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>`
+<span class="token punctuation">}</span>`
 
 
     }
     // 19
     if(e.target.className === "hvr-wobble-horizontal"){
         repeatFun();
-        styletitle.innerHTML = "Wobble Horizontal";
-		repeatCode();
+        styletitle.innerHTML = e.target.innerText;
+        repeatCode();
         cpitem.innerHTML += 
 `<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-wobble-horizontal</span> <span class="token punctuation">{</span>
 	<span class="token selector">16.65%</span> <span class="token punctuation">{</span>
@@ -762,15 +762,15 @@ effectsButtons.forEach((button =>{
 	<span class="token property">animation-timing-function</span><span class="token punctuation">:</span> ease-in-out<span class="token punctuation">;</span>
 	<span class="token property">-webkit-animation-iteration-count</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
 	<span class="token property">animation-iteration-count</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>`
+<span class="token punctuation">}</span>`
 
 
     }
     // 20
     if(e.target.className === "hvr-wobble-vertical"){
       	repeatFun();
-      	styletitle.innerHTML = "Wobble Vertical";
-		repeatCode();
+        styletitle.innerHTML = e.target.innerText;
+        repeatCode();
       	cpitem.innerHTML +=
 `<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-wobble-vertical</span> <span class="token punctuation">{</span>
 	<span class="token selector">16.65%</span> <span class="token punctuation">{</span>
@@ -841,15 +841,15 @@ effectsButtons.forEach((button =>{
 	<span class="token property">animation-timing-function</span><span class="token punctuation">:</span> ease-in-out<span class="token punctuation">;</span>
 	<span class="token property">-webkit-animation-iteration-count</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
 	<span class="token property">animation-iteration-count</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>`
+<span class="token punctuation">}</span>`
 
 
     }
     // 21
     if(e.target.className === "hvr-wobble-to-bottom-right"){
       repeatFun();
-      styletitle.innerHTML = "Wobble To Bottom Right";
-	  repeatCode();
+      styletitle.innerHTML = e.target.innerText;
+      repeatCode();
       cpitem.innerHTML +=
 `<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-wobble-to-bottom-right</span> <span class="token punctuation">{</span>
 	<span class="token selector">16.65%</span> <span class="token punctuation">{</span>
@@ -920,15 +920,15 @@ effectsButtons.forEach((button =>{
 	<span class="token property">animation-timing-function</span><span class="token punctuation">:</span> ease-in-out<span class="token punctuation">;</span>
 	<span class="token property">-webkit-animation-iteration-count</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
 	<span class="token property">animation-iteration-count</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>`
+<span class="token punctuation">}</span>`
 
 
     }
     // 22
     if(e.target.className === "hvr-wobble-to-top-right"){
       repeatFun();
-      styletitle.innerHTML = "Wobble To Top Right";
-	  repeatCode();
+      styletitle.innerHTML = e.target.innerText;
+      repeatCode();
       cpitem.innerHTML +=
 `<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-wobble-to-top-right</span> <span class="token punctuation">{</span>
 	<span class="token selector">16.65%</span> <span class="token punctuation">{</span>
@@ -999,13 +999,13 @@ effectsButtons.forEach((button =>{
 	<span class="token property">animation-timing-function</span><span class="token punctuation">:</span> ease-in-out<span class="token punctuation">;</span>
 	<span class="token property">-webkit-animation-iteration-count</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
 	<span class="token property">animation-iteration-count</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>`
+<span class="token punctuation">}</span>`
     }
     //23
     if(e.target.className === "hvr-wobble-top"){
       repeatFun();
-      styletitle.innerHTML = "Wobble Top";
-	  repeatCode();
+      styletitle.innerHTML = e.target.innerText;
+      repeatCode();
       cpitem.innerHTML +=
 `<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-wobble-top</span> <span class="token punctuation">{</span>
 	<span class="token selector">16.65%</span> <span class="token punctuation">{</span>
@@ -1078,14 +1078,14 @@ effectsButtons.forEach((button =>{
 	<span class="token property">animation-timing-function</span><span class="token punctuation">:</span> ease-in-out<span class="token punctuation">;</span>
 	<span class="token property">-webkit-animation-iteration-count</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
 	<span class="token property">animation-iteration-count</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>`
+<span class="token punctuation">}</span>`
     }
 
     //24
     if(e.target.className === "hvr-wobble-bottom"){
       repeatFun();
-      styletitle.innerHTML = "Wobble Bottom";
-	  repeatCode();
+      styletitle.innerHTML = e.target.innerText;
+      repeatCode();
       cpitem.innerHTML +=
 `<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-wobble-bottom</span> <span class="token punctuation">{</span>
 	<span class="token selector">16.65%</span> <span class="token punctuation">{</span>
@@ -1158,14 +1158,14 @@ effectsButtons.forEach((button =>{
 	<span class="token property">animation-timing-function</span><span class="token punctuation">:</span> ease-in-out<span class="token punctuation">;</span>
 	<span class="token property">-webkit-animation-iteration-count</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
 	<span class="token property">animation-iteration-count</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>`
+<span class="token punctuation">}</span>`
     }
 
     //25
     if(e.target.className === "hvr-wobble-skew"){
       repeatFun();
-      styletitle.innerHTML = "Wobble Skew";
-	  repeatCode();
+      styletitle.innerHTML = e.target.innerText;
+      repeatCode();
       cpitem.innerHTML +=
 `<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-wobble-skew</span> <span class="token punctuation">{</span>
 	<span class="token selector">16.65%</span> <span class="token punctuation">{</span>
@@ -1236,14 +1236,14 @@ effectsButtons.forEach((button =>{
 	<span class="token property">animation-timing-function</span><span class="token punctuation">:</span> ease-in-out<span class="token punctuation">;</span>
 	<span class="token property">-webkit-animation-iteration-count</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
 	<span class="token property">animation-iteration-count</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>`
+<span class="token punctuation">}</span>`
     }
 
-    //25
+    //26
     if(e.target.className === "hvr-buzz"){
       repeatFun();
-      styletitle.innerHTML = "Buzz";
-	  repeatCode();
+      styletitle.innerHTML = e.target.innerText;
+      repeatCode();
       cpitem.innerHTML +=
 `<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-buzz</span> <span class="token punctuation">{</span>
 	<span class="token selector">50%</span> <span class="token punctuation">{</span>
@@ -1282,14 +1282,14 @@ effectsButtons.forEach((button =>{
 	<span class="token property">animation-timing-function</span><span class="token punctuation">:</span> linear<span class="token punctuation">;</span>
 	<span class="token property">-webkit-animation-iteration-count</span><span class="token punctuation">:</span> infinite<span class="token punctuation">;</span>
 	<span class="token property">animation-iteration-count</span><span class="token punctuation">:</span> infinite<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>`
+<span class="token punctuation">}</span>`
     }
 
-    //26
+    //27
     if(e.target.className === "hvr-buzz-out"){
       repeatFun();
-      styletitle.innerHTML = "Buzz Out";
-	  repeatCode();
+      styletitle.innerHTML = e.target.innerText;
+      repeatCode();
       cpitem.innerHTML +=
 `<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-buzz-out</span> <span class="token punctuation">{</span>
 	<span class="token selector">10%</span> <span class="token punctuation">{</span>
@@ -1392,14 +1392,14 @@ effectsButtons.forEach((button =>{
 	<span class="token property">animation-timing-function</span><span class="token punctuation">:</span> linear<span class="token punctuation">;</span>
 	<span class="token property">-webkit-animation-iteration-count</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
 	<span class="token property">animation-iteration-count</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>`
+<span class="token punctuation">}</span>`
     }
 
-    //27
+    //28
     if(e.target.className === "hvr-forward"){
       repeatFun();
-      styletitle.innerHTML = "Forward";
-	  repeatCode();
+      styletitle.innerHTML = e.target.innerText;
+      repeatCode();
       cpitem.innerHTML +=
 `<span class="token selector">.hvr-forward</span> <span class="token punctuation">{</span>
 	<span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
@@ -1416,14 +1416,14 @@ effectsButtons.forEach((button =>{
 <span class="token selector">.hvr-forward:hover, .hvr-forward:focus, .hvr-forward:active</span> <span class="token punctuation">{</span>
 	<span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span>8px<span class="token punctuation">)</span><span class="token punctuation">;</span>
 	<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span>8px<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>`
+<span class="token punctuation">}</span>`
     }
 
-    //28
+    //29
     if(e.target.className === "hvr-backward"){
       repeatFun();
-      styletitle.innerHTML = "Backward";
-	  repeatCode();
+      styletitle.innerHTML = e.target.innerText;
+      repeatCode();
       cpitem.innerHTML +=
 `<span class="token selector">.hvr-backward</span> <span class="token punctuation">{</span>
 	<span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
@@ -1440,14 +1440,15 @@ effectsButtons.forEach((button =>{
 <span class="token selector">.hvr-backward:hover, .hvr-backward:focus, .hvr-backward:active</span> <span class="token punctuation">{</span>
 	<span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span>-8px<span class="token punctuation">)</span><span class="token punctuation">;</span>
 	<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span>-8px<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>`
+<span class="token punctuation">}</span>`
 
     }
 
-	//BACKGROUND //29
+	//BACKGROUND 
+  //30
     if(e.target.className === "hvr-fade"){
 		repeatFun();
-		styletitle.innerHTML = "Fade";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token selector">.hvr-fade</span> <span class="token punctuation">{</span>
@@ -1464,16 +1465,16 @@ effectsButtons.forEach((button =>{
     <span class="token property">transition-property</span><span class="token punctuation">:</span> color<span class="token punctuation">,</span> background-color<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 <span class="token selector">.hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active</span> <span class="token punctuation">{</span>
-    <span class="token property">background-color</span><span class="token punctuation">:</span>  #009945<span class="token punctuation">;</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span>  #183199<span class="token punctuation">;</span>
     <span class="token property">color</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>`
+<span class="token punctuation">}</span>`
 
 
     }
-    //30
+    //31
 	if(e.target.className === "hvr-back-pulse"){
 		repeatFun();
-		styletitle.innerHTML = "Back Pulse";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-back-pulse</span> <span class="token punctuation">{</span>
@@ -1510,16 +1511,16 @@ effectsButtons.forEach((button =>{
     <span class="token property">animation-timing-function</span><span class="token punctuation">:</span> linear<span class="token punctuation">;</span>
     <span class="token property">-webkit-animation-iteration-count</span><span class="token punctuation">:</span> infinite<span class="token punctuation">;</span>
     <span class="token property">animation-iteration-count</span><span class="token punctuation">:</span> infinite<span class="token punctuation">;</span>
-    <span class="token property">background-color</span><span class="token punctuation">:</span>  #009945<span class="token punctuation">;</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span>  #0033ff<span class="token punctuation">;</span>
     <span class="token property">color</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>`
 
 
 	}
-	//31
+	//32
 	if(e.target.className === "hvr-sweep-to-right"){
 		repeatFun();
-		styletitle.innerHTML = "Sweep To Right";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token selector">.hvr-sweep-to-right</span> <span class="token punctuation">{</span>
@@ -1543,7 +1544,7 @@ effectsButtons.forEach((button =>{
     <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
     <span class="token property">right</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
     <span class="token property">bottom</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
-    <span class="token property">background</span><span class="token punctuation">:</span>  #009945<span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span>  #183199<span class="token punctuation">;</span>
     <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">scaleX</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scaleX</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token property">-webkit-transform-origin</span><span class="token punctuation">:</span> 0 50%<span class="token punctuation">;</span>
@@ -1565,10 +1566,10 @@ effectsButtons.forEach((button =>{
 
 
 	}
-	//32
+	//33
 	if(e.target.className === "hvr-sweep-to-left"){
 		repeatFun();
-		styletitle.innerHTML = "Sweep To Left";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token selector">.hvr-sweep-to-left</span> <span class="token punctuation">{</span>
@@ -1592,7 +1593,7 @@ effectsButtons.forEach((button =>{
     <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
     <span class="token property">right</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
     <span class="token property">bottom</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
-    <span class="token property">background</span><span class="token punctuation">:</span>  #009945<span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span>  #183199<span class="token punctuation">;</span>
     <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">scaleX</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scaleX</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token property">-webkit-transform-origin</span><span class="token punctuation">:</span> 100% 50%<span class="token punctuation">;</span>
@@ -1614,10 +1615,10 @@ effectsButtons.forEach((button =>{
 
 
 	}
-	//33
+	//34
 	if(e.target.className === "hvr-sweep-to-bottom"){
 		repeatFun();
-		styletitle.innerHTML = "Sweep To Bottom";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token selector">.hvr-sweep-to-bottom</span> <span class="token punctuation">{</span>
@@ -1641,7 +1642,7 @@ effectsButtons.forEach((button =>{
     <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
     <span class="token property">right</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
     <span class="token property">bottom</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
-    <span class="token property">background</span><span class="token punctuation">:</span>  #009945<span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span>  #183199<span class="token punctuation">;</span>
     <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">scaleY</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scaleY</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token property">-webkit-transform-origin</span><span class="token punctuation">:</span> 50% 0<span class="token punctuation">;</span>
@@ -1663,10 +1664,10 @@ effectsButtons.forEach((button =>{
 
 
 	}
-	//34
+	//35
 	if(e.target.className === "hvr-sweep-to-top"){
 		repeatFun();
-		styletitle.innerHTML = "Sweep To Top";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token selector">.hvr-sweep-to-top</span> <span class="token punctuation">{</span>
@@ -1690,7 +1691,7 @@ effectsButtons.forEach((button =>{
     <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
     <span class="token property">right</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
     <span class="token property">bottom</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
-    <span class="token property">background</span><span class="token punctuation">:</span>  #009945<span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span>  #183199<span class="token punctuation">;</span>
     <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">scaleY</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scaleY</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token property">-webkit-transform-origin</span><span class="token punctuation">:</span> 50% 100%<span class="token punctuation">;</span>
@@ -1712,10 +1713,10 @@ effectsButtons.forEach((button =>{
 
 
 	}
-	//35
+	//36
 	if(e.target.className === "hvr-bounce-to-right"){
 		repeatFun();
-		styletitle.innerHTML = "Bounce To Right";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token selector">.hvr-bounce-to-right</span> <span class="token punctuation">{</span>
@@ -1739,7 +1740,7 @@ effectsButtons.forEach((button =>{
     <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
     <span class="token property">right</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
     <span class="token property">bottom</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
-    <span class="token property">background</span><span class="token punctuation">:</span>  #009945<span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span>  #183199<span class="token punctuation">;</span>
     <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">scaleX</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scaleX</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token property">-webkit-transform-origin</span><span class="token punctuation">:</span> 0 50%<span class="token punctuation">;</span>
@@ -1763,10 +1764,10 @@ effectsButtons.forEach((button =>{
 
 
 	}
-	//36
+	//37
 	if(e.target.className === "hvr-bounce-to-left"){
 		repeatFun();
-		styletitle.innerHTML = "Bounce To Left";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token selector">.hvr-bounce-to-left</span> <span class="token punctuation">{</span>
@@ -1790,7 +1791,7 @@ effectsButtons.forEach((button =>{
     <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
     <span class="token property">right</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
     <span class="token property">bottom</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
-    <span class="token property">background</span><span class="token punctuation">:</span>  #009945<span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span>  #183199<span class="token punctuation">;</span>
     <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">scaleX</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scaleX</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token property">-webkit-transform-origin</span><span class="token punctuation">:</span> 100% 50%<span class="token punctuation">;</span>
@@ -1814,10 +1815,10 @@ effectsButtons.forEach((button =>{
 
 
 	}
-	//37
+	//38
 	if(e.target.className === "hvr-bounce-to-bottom"){
 		repeatFun();
-		styletitle.innerHTML = "Bounce To Bottom";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token selector">.hvr-bounce-to-bottom</span> <span class="token punctuation">{</span>
@@ -1841,7 +1842,7 @@ effectsButtons.forEach((button =>{
     <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
     <span class="token property">right</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
     <span class="token property">bottom</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
-    <span class="token property">background</span><span class="token punctuation">:</span>  #009945<span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span>  #183199<span class="token punctuation">;</span>
     <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">scaleY</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scaleY</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token property">-webkit-transform-origin</span><span class="token punctuation">:</span> 50% 0<span class="token punctuation">;</span>
@@ -1865,10 +1866,10 @@ effectsButtons.forEach((button =>{
 
 
 	}
-	//38
+	//39
 	if(e.target.className === "hvr-bounce-to-top"){
 		repeatFun();
-		styletitle.innerHTML = "Bounce To Top";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token selector">.hvr-bounce-to-top</span> <span class="token punctuation">{</span>
@@ -1892,7 +1893,7 @@ effectsButtons.forEach((button =>{
     <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
     <span class="token property">right</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
     <span class="token property">bottom</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
-    <span class="token property">background</span><span class="token punctuation">:</span>  #009945<span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span>  #183199<span class="token punctuation">;</span>
     <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">scaleY</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scaleY</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token property">-webkit-transform-origin</span><span class="token punctuation">:</span> 50% 100%<span class="token punctuation">;</span>
@@ -1916,10 +1917,10 @@ effectsButtons.forEach((button =>{
 
 
 	}
-	//39
+	//40
 	if(e.target.className === "hvr-radial-out"){
 		repeatFun();
-		styletitle.innerHTML = "Radial Out";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token selector">.hvr-radial-out</span> <span class="token punctuation">{</span>
@@ -1945,7 +1946,7 @@ effectsButtons.forEach((button =>{
     <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
     <span class="token property">right</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
     <span class="token property">bottom</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
-    <span class="token property">background</span><span class="token punctuation">:</span>  #009945<span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span>  #183199<span class="token punctuation">;</span>
     <span class="token property">border-radius</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
     <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -1966,10 +1967,10 @@ effectsButtons.forEach((button =>{
 
 
 	}
-	//40
+	//41
 	if(e.target.className === "hvr-radial-in"){
 		repeatFun();
-		styletitle.innerHTML = "Radial In";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token selector">.hvr-radial-in</span> <span class="token punctuation">{</span>
@@ -1981,7 +1982,7 @@ effectsButtons.forEach((button =>{
     <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 0 1px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
     <span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
-    <span class="token property">background</span><span class="token punctuation">:</span>  #009945<span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span>  #183199<span class="token punctuation">;</span>
     <span class="token property">-webkit-transition-property</span><span class="token punctuation">:</span> color<span class="token punctuation">;</span>
     <span class="token property">transition-property</span><span class="token punctuation">:</span> color<span class="token punctuation">;</span>
     <span class="token property">-webkit-transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
@@ -2014,10 +2015,10 @@ effectsButtons.forEach((button =>{
     <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>`
 	}
-	//41
+	//42
 	if(e.target.className === "hvr-rectangle-in"){
 		repeatFun();
-		styletitle.innerHTML = "Rectangle In";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token selector">.hvr-rectangle-in</span> <span class="token punctuation">{</span>
@@ -2028,7 +2029,7 @@ effectsButtons.forEach((button =>{
     <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 0 1px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
-    <span class="token property">background</span><span class="token punctuation">:</span>  #009945<span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span>  #183199<span class="token punctuation">;</span>
     <span class="token property">-webkit-transition-property</span><span class="token punctuation">:</span> color<span class="token punctuation">;</span>
     <span class="token property">transition-property</span><span class="token punctuation">:</span> color<span class="token punctuation">;</span>
     <span class="token property">-webkit-transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
@@ -2061,10 +2062,10 @@ effectsButtons.forEach((button =>{
 <span class="token punctuation">}</span>`
 
 	}
-	//42
+	//43
 	if(e.target.className === "hvr-rectangle-out"){
 		repeatFun();
-		styletitle.innerHTML = "Rectangle Out";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token selector">.hvr-rectangle-out</span> <span class="token punctuation">{</span>
@@ -2089,7 +2090,7 @@ effectsButtons.forEach((button =>{
     <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
     <span class="token property">right</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
     <span class="token property">bottom</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
-    <span class="token property">background</span><span class="token punctuation">:</span>  #009945<span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span>  #183199<span class="token punctuation">;</span>
     <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token property">-webkit-transition-property</span><span class="token punctuation">:</span> transform<span class="token punctuation">;</span>
@@ -2108,10 +2109,10 @@ effectsButtons.forEach((button =>{
 <span class="token punctuation">}</span>`
 
 	}
-	//43
+	//44
 	if(e.target.className === "hvr-shutter-in-horizontal"){
 		repeatFun();
-		styletitle.innerHTML = "Shutter In Horizontal";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token selector">.hvr-shutter-in-horizontal</span> <span class="token punctuation">{</span>
@@ -2122,7 +2123,7 @@ effectsButtons.forEach((button =>{
     <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 0 1px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
-    <span class="token property">background</span><span class="token punctuation">:</span>  #009945<span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span>  #183199<span class="token punctuation">;</span>
     <span class="token property">-webkit-transition-property</span><span class="token punctuation">:</span> color<span class="token punctuation">;</span>
     <span class="token property">transition-property</span><span class="token punctuation">:</span> color<span class="token punctuation">;</span>
     <span class="token property">-webkit-transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
@@ -2157,10 +2158,10 @@ effectsButtons.forEach((button =>{
 <span class="token punctuation">}</span>`
 
 	}
-	//44
+	//45
 	if(e.target.className === "hvr-shutter-out-horizontal"){
 		repeatFun();
-		styletitle.innerHTML = "Shutter Out Horizontal";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token selector">.hvr-shutter-out-horizontal</span> <span class="token punctuation">{</span>
@@ -2185,7 +2186,7 @@ effectsButtons.forEach((button =>{
     <span class="token property">bottom</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
     <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
     <span class="token property">right</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
-    <span class="token property">background</span><span class="token punctuation">:</span>  #009945<span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span>  #183199<span class="token punctuation">;</span>
     <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">scaleX</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scaleX</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token property">-webkit-transform-origin</span><span class="token punctuation">:</span> 50%<span class="token punctuation">;</span>
@@ -2206,10 +2207,10 @@ effectsButtons.forEach((button =>{
 <span class="token punctuation">}</span>`
 
 	}
-	// 45
+	// 46
 	if(e.target.className === "hvr-shutter-in-vertical"){
 		repeatFun();
-		styletitle.innerHTML = "Shutter In Vertical";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token selector">.hvr-shutter-in-vertical</span> <span class="token punctuation">{</span>
@@ -2220,7 +2221,7 @@ effectsButtons.forEach((button =>{
     <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 0 1px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
-    <span class="token property">background</span><span class="token punctuation">:</span>  #009945<span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span>  #183199<span class="token punctuation">;</span>
     <span class="token property">-webkit-transition-property</span><span class="token punctuation">:</span> color<span class="token punctuation">;</span>
     <span class="token property">transition-property</span><span class="token punctuation">:</span> color<span class="token punctuation">;</span>
     <span class="token property">-webkit-transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
@@ -2255,10 +2256,10 @@ effectsButtons.forEach((button =>{
 <span class="token punctuation">}</span>`
 
 	}
-	//46
+	//47
 	if(e.target.className === "hvr-shutter-out-vertical"){
 		repeatFun();
-		styletitle.innerHTML = "Shutter Out Vertical";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token selector">.hvr-shutter-out-vertical</span> <span class="token punctuation">{</span>
@@ -2283,7 +2284,7 @@ effectsButtons.forEach((button =>{
     <span class="token property">bottom</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
     <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
     <span class="token property">right</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
-    <span class="token property">background</span><span class="token punctuation">:</span>  #009945<span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span>  #183199<span class="token punctuation">;</span>
     <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">scaleY</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scaleY</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token property">-webkit-transform-origin</span><span class="token punctuation">:</span> 50%<span class="token punctuation">;</span>
@@ -2304,10 +2305,10 @@ effectsButtons.forEach((button =>{
 <span class="token punctuation">}</span>`
 	}
 	// ICON
-	//47
+	//48
 	if(e.target.className === "hvr-icon-back"){
 		repeatFun();
-		styletitle.innerHTML = "Icon Back";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token selector">.hvr-icon-back</span> <span class="token punctuation">{</span>
@@ -2336,10 +2337,10 @@ effectsButtons.forEach((button =>{
 <span class="token punctuation">}</span>`
 
 	}
-	// 48
+	// 49
 	if(e.target.className === "hvr-icon-forward"){
 		repeatFun();
-		styletitle.innerHTML = "Icon Forward";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token selector">.hvr-icon-forward</span> <span class="token punctuation">{</span>
@@ -2368,10 +2369,10 @@ effectsButtons.forEach((button =>{
 <span class="token punctuation">}</span>`
 
 	}
-	//49
+	//50
 	if(e.target.className === "hvr-icon-down"){
 		repeatFun();
-		styletitle.innerHTML = "Icon Down";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-down</span> <span class="token punctuation">{</span>
@@ -2422,10 +2423,10 @@ effectsButtons.forEach((button =>{
 <span class="token punctuation">}</span>`
 
 	}
-	// 50
+	// 51
 	if(e.target.className === "hvr-icon-up"){
 		repeatFun();
-		styletitle.innerHTML = "Icon Up";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-up</span> <span class="token punctuation">{</span>
@@ -2476,10 +2477,10 @@ effectsButtons.forEach((button =>{
 <span class="token punctuation">}</span>`
 
 	}
-	// 51
+	// 52
 	if(e.target.className === "hvr-icon-spin"){
 		repeatFun();
-		styletitle.innerHTML = "Icon Spin";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token selector">.hvr-icon-spin</span> <span class="token punctuation">{</span>
@@ -2504,10 +2505,10 @@ effectsButtons.forEach((button =>{
 <span class="token punctuation">}</span>`
 
 	}
-	//52
+	//53
 	if(e.target.className === "hvr-icon-drop"){
 		repeatFun();
-		styletitle.innerHTML = "Icon Drop";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-drop</span> <span class="token punctuation">{</span>
@@ -2569,10 +2570,10 @@ effectsButtons.forEach((button =>{
 <span class="token punctuation">}</span>`
 
 	}
-	//53
+	//54
 	if(e.target.className === "hvr-icon-fade"){
 		repeatFun();
-		styletitle.innerHTML = "Icon Fade";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token selector">.hvr-icon-fade</span> <span class="token punctuation">{</span>
@@ -2592,14 +2593,14 @@ effectsButtons.forEach((button =>{
     <span class="token property">transition-property</span><span class="token punctuation">:</span> color<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 <span class="token selector">.hvr-icon-fade:hover .hvr-icon, .hvr-icon-fade:focus .hvr-icon, .hvr-icon-fade:active .hvr-icon</span> <span class="token punctuation">{</span>
-    <span class="token property">color</span><span class="token punctuation">:</span>  #009945<span class="token punctuation">;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span>  #0033ff<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>`
 
 	}
-	// 54
+	// 55
 	if(e.target.className === "hvr-icon-float-away"){
 		repeatFun();
-		styletitle.innerHTML = "Icon Float Away";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-float-away</span> <span class="token punctuation">{</span>
@@ -2646,10 +2647,10 @@ effectsButtons.forEach((button =>{
 <span class="token punctuation">}</span>`
 
 	}
-	// 55
+	// 56
 	if(e.target.className === "hvr-icon-sink-away"){
 		repeatFun();
-		styletitle.innerHTML = "Icon Sink Away";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-sink-away</span> <span class="token punctuation">{</span>
@@ -2696,10 +2697,10 @@ effectsButtons.forEach((button =>{
 <span class="token punctuation">}</span>`
 
 	}
-	// 56
+	// 57
 	if(e.target.className === "hvr-icon-grow"){
 		repeatFun();
-		styletitle.innerHTML = "Icon Grow";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token selector">.hvr-icon-grow</span> <span class="token punctuation">{</span>
@@ -2728,10 +2729,10 @@ effectsButtons.forEach((button =>{
 <span class="token punctuation">}</span>`
 
 	}
-	// 57
+	// 58
 	if(e.target.className === "hvr-icon-shrink"){
 		repeatFun();
-		styletitle.innerHTML = "Icon Shrink";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token selector">.hvr-icon-shrink</span> <span class="token punctuation">{</span>
@@ -2760,10 +2761,10 @@ effectsButtons.forEach((button =>{
 <span class="token punctuation">}</span>`
 
 	}
-	//58
+	//59
 	if(e.target.className === "hvr-icon-pulse"){
 		repeatFun();
-		styletitle.innerHTML = "Icon Pulse";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-pulse</span> <span class="token punctuation">{</span>
@@ -2812,10 +2813,10 @@ effectsButtons.forEach((button =>{
 <span class="token punctuation">}</span>`
 
 	}
-	// 59
+	// 60
 	if(e.target.className === "hvr-icon-pulse-grow"){
 		repeatFun();
-		styletitle.innerHTML = "Icon Pulse Grow";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-pulse-grow</span> <span class="token punctuation">{</span>
@@ -2858,10 +2859,10 @@ effectsButtons.forEach((button =>{
 <span class="token punctuation">}</span>`
 
 	}
-	//60
+	//61
 	if(e.target.className === "hvr-icon-pulse-shrink"){
 		repeatFun();
-		styletitle.innerHTML = "Icon Pulse Shrink";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-pulse-shrink</span> <span class="token punctuation">{</span>
@@ -2904,10 +2905,10 @@ effectsButtons.forEach((button =>{
 <span class="token punctuation">}</span>`
 
 	}
-	//61
+	//62
 	if(e.target.className === "hvr-icon-push"){
 		repeatFun();
-		styletitle.innerHTML = "Icon Push";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-push</span> <span class="token punctuation">{</span>
@@ -2953,10 +2954,10 @@ effectsButtons.forEach((button =>{
     <span class="token property">animation-iteration-count</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>`
 	}
-	// 62
+	// 63
 	if(e.target.className === "hvr-icon-pop"){
 		repeatFun();
-		styletitle.innerHTML = "Icon Pop";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-pop</span> <span class="token punctuation">{</span>
@@ -3003,10 +3004,10 @@ effectsButtons.forEach((button =>{
 <span class="token punctuation">}</span>`
 
 	}
-	//63
+	//64
 	if(e.target.className === "hvr-icon-bounce"){
 		repeatFun();
-		styletitle.innerHTML = "Icon Bounce";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token selector">.hvr-icon-bounce</span> <span class="token punctuation">{</span>
@@ -3037,10 +3038,10 @@ effectsButtons.forEach((button =>{
 <span class="token punctuation">}</span>`
 
 	}
-	// 64
+	// 65
 	if(e.target.className === "hvr-icon-rotate"){
 		repeatFun();
-		styletitle.innerHTML = "Icon Rotate";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token selector">.hvr-icon-rotate</span> <span class="token punctuation">{</span>
@@ -3069,10 +3070,10 @@ effectsButtons.forEach((button =>{
 <span class="token punctuation">}</span>`
 
 	}
-	// 65
+	// 66
 	if(e.target.className === "hvr-icon-grow-rotate"){
 		repeatFun();
-		styletitle.innerHTML = "Icon Grow Rotate";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token selector">.hvr-icon-grow-rotate</span> <span class="token punctuation">{</span>
@@ -3101,10 +3102,10 @@ effectsButtons.forEach((button =>{
 <span class="token punctuation">}</span>`
 
 	}
-	// 66
+	// 67
 	if(e.target.className === "hvr-icon-float"){
 		repeatFun();
-		styletitle.innerHTML = "Icon Float";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token selector">.hvr-icon-float</span> <span class="token punctuation">{</span>
@@ -3133,10 +3134,10 @@ effectsButtons.forEach((button =>{
 <span class="token punctuation">}</span>`
 
 	}
-	// 67
+	// 68
 	if(e.target.className === "hvr-icon-sink"){
 		repeatFun();
-		styletitle.innerHTML = "Icon sink";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token selector">.hvr-icon-sink</span> <span class="token punctuation">{</span>
@@ -3165,10 +3166,10 @@ effectsButtons.forEach((button =>{
 <span class="token punctuation">}</span>`
 
 	}
-	// 68
+	// 69
 	if(e.target.className === "hvr-icon-bob"){
 		repeatFun();
-		styletitle.innerHTML = "Icon Bob";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-bob</span> <span class="token punctuation">{</span>
@@ -3243,10 +3244,10 @@ effectsButtons.forEach((button =>{
 <span class="token punctuation">}</span>`
 
 	}
-	// 69
+	// 70
 	if(e.target.className === "hvr-icon-hang"){
 		repeatFun();
-		styletitle.innerHTML = "Icon Hang";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-hang</span> <span class="token punctuation">{</span>
@@ -3351,10 +3352,10 @@ effectsButtons.forEach((button =>{
 <span class="token punctuation">}</span>`
 
 	}
-	//70
+	//71
 	if(e.target.className === "hvr-icon-wobble-horizontal"){
 		repeatFun();
-		styletitle.innerHTML = "Icon Wobble Horizontal";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-wobble-horizontal</span> <span class="token punctuation">{</span>
@@ -3435,10 +3436,10 @@ effectsButtons.forEach((button =>{
 <span class="token punctuation">}</span>`
 
 	}
-	// 71
+	// 72
 	if(e.target.className === "hvr-icon-wobble-vertical"){
 		repeatFun();
-		styletitle.innerHTML = "Icon Wobble Vertical";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-wobble-vertical</span> <span class="token punctuation">{</span>
@@ -3519,10 +3520,10 @@ effectsButtons.forEach((button =>{
 <span class="token punctuation">}</span>`
 
 	}
-	// 72
+	// 73
 	if(e.target.className === "hvr-icon-buzz"){
 		repeatFun();
-		styletitle.innerHTML = "Icon Buzz";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-buzz</span> <span class="token punctuation">{</span>
@@ -3571,10 +3572,10 @@ effectsButtons.forEach((button =>{
 <span class="token punctuation">}</span>`
 
 	}
-	// 73
+	// 74
 	if(e.target.className === "hvr-icon-buzz-out"){
 		repeatFun();
-		styletitle.innerHTML = "Icon Buzz Out";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-icon-buzz-out</span> <span class="token punctuation">{</span>
@@ -3687,10 +3688,10 @@ effectsButtons.forEach((button =>{
 <span class="token punctuation">}</span>`
 	}
 	// BORDER TRANSITIONS
-	// 74
+	// 75
 	if(e.target.className === "hvr-border-fade"){
 		repeatFun();
-		styletitle.innerHTML = "Border Fade";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token selector">.hvr-border-fade</span> <span class="token punctuation">{</span>
@@ -3708,15 +3709,15 @@ effectsButtons.forEach((button =>{
     <span class="token comment">/* Hack to improve aliasing on mobile/tablet devices */</span>
 <span class="token punctuation">}</span>
 <span class="token selector">.hvr-border-fade:hover, .hvr-border-fade:focus, .hvr-border-fade:active</span> <span class="token punctuation">{</span>
-    <span class="token property">box-shadow</span><span class="token punctuation">:</span> inset 0 0 0 4px  #009945<span class="token punctuation">,</span> 0 0 1px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">box-shadow</span><span class="token punctuation">:</span> inset 0 0 0 4px  #183199<span class="token punctuation">,</span> 0 0 1px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token comment">/* Hack to improve aliasing on mobile/tablet devices */</span>
-<span class="token punctuation">}</span></code>
+<span class="token punctuation">}</span>
 `
 	}
-	// 75
+	// 76
 	if(e.target.className === "hvr-hollow"){
 		repeatFun();
-		styletitle.innerHTML = "Hollow";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token selector">.hvr-hollow</span> <span class="token punctuation">{</span>
@@ -3735,12 +3736,12 @@ effectsButtons.forEach((button =>{
 <span class="token punctuation">}</span>
 <span class="token selector">.hvr-hollow:hover, .hvr-hollow:focus, .hvr-hollow:active</span> <span class="token punctuation">{</span>
     <span class="token property">background</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>`
+<span class="token punctuation">}</span>`
 	}
-	// 76
+	// 77
 	if(e.target.className === "hvr-trim"){
 		repeatFun();
-		styletitle.innerHTML = "Trim";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token selector">.hvr-trim</span> <span class="token punctuation">{</span>
@@ -3768,12 +3769,12 @@ effectsButtons.forEach((button =>{
 <span class="token punctuation">}</span>
 <span class="token selector">.hvr-trim:hover:before, .hvr-trim:focus:before, .hvr-trim:active:before</span> <span class="token punctuation">{</span>
     <span class="token property">opacity</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>`
+<span class="token punctuation">}</span>`
 	}
-	// 77
+	// 78
 	if(e.target.className === "hvr-ripple-out"){
 		repeatFun();
-		styletitle.innerHTML = "Ripple Out";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-ripple-out</span> <span class="token punctuation">{</span>
@@ -3817,12 +3818,12 @@ effectsButtons.forEach((button =>{
 <span class="token selector">.hvr-ripple-out:hover:before, .hvr-ripple-out:focus:before, .hvr-ripple-out:active:before</span> <span class="token punctuation">{</span>
     <span class="token property">-webkit-animation-name</span><span class="token punctuation">:</span> hvr-ripple-out<span class="token punctuation">;</span>
     <span class="token property">animation-name</span><span class="token punctuation">:</span> hvr-ripple-out<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>`
+<span class="token punctuation">}</span>`
 	}
-	// 78
+	// 79
 	if(e.target.className === "hvr-ripple-in"){
 		repeatFun();
-		styletitle.innerHTML = "Ripple In";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> hvr-ripple-in</span> <span class="token punctuation">{</span>
@@ -3867,12 +3868,12 @@ effectsButtons.forEach((button =>{
 <span class="token selector">.hvr-ripple-in:hover:before, .hvr-ripple-in:focus:before, .hvr-ripple-in:active:before</span> <span class="token punctuation">{</span>
     <span class="token property">-webkit-animation-name</span><span class="token punctuation">:</span> hvr-ripple-in<span class="token punctuation">;</span>
     <span class="token property">animation-name</span><span class="token punctuation">:</span> hvr-ripple-in<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>`
+<span class="token punctuation">}</span>`
 	}
-	//79
+	// 80
 	if(e.target.className === "hvr-outline-out"){
 		repeatFun();
-		styletitle.innerHTML = "Outline Out";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token selector">.hvr-outline-out</span> <span class="token punctuation">{</span>
@@ -3902,12 +3903,12 @@ effectsButtons.forEach((button =>{
     <span class="token property">right</span><span class="token punctuation">:</span> -8px<span class="token punctuation">;</span>
     <span class="token property">bottom</span><span class="token punctuation">:</span> -8px<span class="token punctuation">;</span>
     <span class="token property">left</span><span class="token punctuation">:</span> -8px<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>`
+<span class="token punctuation">}</span>`
 	}
-	//80
+	//81
 	if(e.target.className === "hvr-outline-in"){
 		repeatFun();
-		styletitle.innerHTML = "Outline In";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token selector">.hvr-outline-in</span> <span class="token punctuation">{</span>
@@ -3940,12 +3941,12 @@ effectsButtons.forEach((button =>{
     <span class="token property">bottom</span><span class="token punctuation">:</span> -8px<span class="token punctuation">;</span>
     <span class="token property">left</span><span class="token punctuation">:</span> -8px<span class="token punctuation">;</span>
     <span class="token property">opacity</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>`
+<span class="token punctuation">}</span>`
 	}
-	//81
+	//82
 	if(e.target.className === "hvr-round-corners"){
 		repeatFun();
-		styletitle.innerHTML = "Round Corners";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token selector">.hvr-round-corners</span> <span class="token punctuation">{</span>
@@ -3962,12 +3963,12 @@ effectsButtons.forEach((button =>{
 <span class="token punctuation">}</span>
 <span class="token selector">.hvr-round-corners:hover, .hvr-round-corners:focus, .hvr-round-corners:active</span> <span class="token punctuation">{</span>
     <span class="token property">border-radius</span><span class="token punctuation">:</span> 1em<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>`
+<span class="token punctuation">}</span>`
 	}
-	// 82
+	// 83
 	if(e.target.className === "hvr-underline-from-left"){
 		repeatFun();
-		styletitle.innerHTML = "Underline From Left";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token selector">.hvr-underline-from-left</span> <span class="token punctuation">{</span>
@@ -3987,7 +3988,7 @@ effectsButtons.forEach((button =>{
     <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
     <span class="token property">right</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
     <span class="token property">bottom</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
-    <span class="token property">background</span><span class="token punctuation">:</span>  #009945<span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span>  #183199<span class="token punctuation">;</span>
     <span class="token property">height</span><span class="token punctuation">:</span> 4px<span class="token punctuation">;</span>
     <span class="token property">-webkit-transition-property</span><span class="token punctuation">:</span> right<span class="token punctuation">;</span>
     <span class="token property">transition-property</span><span class="token punctuation">:</span> right<span class="token punctuation">;</span>
@@ -3998,12 +3999,12 @@ effectsButtons.forEach((button =>{
 <span class="token punctuation">}</span>
 <span class="token selector">.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before</span> <span class="token punctuation">{</span>
     <span class="token property">right</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>`
+<span class="token punctuation">}</span>`
 	}
-	// 83
+	// 84
 	if(e.target.className === "hvr-underline-from-center"){
 		repeatFun();
-		styletitle.innerHTML = "Underline From Center";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token selector">.hvr-underline-from-center</span> <span class="token punctuation">{</span>
@@ -4023,7 +4024,7 @@ effectsButtons.forEach((button =>{
     <span class="token property">left</span><span class="token punctuation">:</span> 51%<span class="token punctuation">;</span>
     <span class="token property">right</span><span class="token punctuation">:</span> 51%<span class="token punctuation">;</span>
     <span class="token property">bottom</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
-    <span class="token property">background</span><span class="token punctuation">:</span>  #009945<span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span>  #183199<span class="token punctuation">;</span>
     <span class="token property">height</span><span class="token punctuation">:</span> 4px<span class="token punctuation">;</span>
     <span class="token property">-webkit-transition-property</span><span class="token punctuation">:</span> left<span class="token punctuation">,</span> right<span class="token punctuation">;</span>
     <span class="token property">transition-property</span><span class="token punctuation">:</span> left<span class="token punctuation">,</span> right<span class="token punctuation">;</span>
@@ -4035,12 +4036,12 @@ effectsButtons.forEach((button =>{
 <span class="token selector">.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before</span> <span class="token punctuation">{</span>
     <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
     <span class="token property">right</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>`
+<span class="token punctuation">}</span>`
 	}
-	//84
+	//85
 	if(e.target.className === "hvr-underline-from-right"){
 		repeatFun();
-		styletitle.innerHTML = "Underline From Right";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token selector">.hvr-underline-from-right</span> <span class="token punctuation">{</span>
@@ -4060,7 +4061,7 @@ effectsButtons.forEach((button =>{
     <span class="token property">left</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
     <span class="token property">right</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
     <span class="token property">bottom</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
-    <span class="token property">background</span><span class="token punctuation">:</span>  #009945<span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span>  #183199<span class="token punctuation">;</span>
     <span class="token property">height</span><span class="token punctuation">:</span> 4px<span class="token punctuation">;</span>
     <span class="token property">-webkit-transition-property</span><span class="token punctuation">:</span> left<span class="token punctuation">;</span>
     <span class="token property">transition-property</span><span class="token punctuation">:</span> left<span class="token punctuation">;</span>
@@ -4071,12 +4072,12 @@ effectsButtons.forEach((button =>{
 <span class="token punctuation">}</span>
 <span class="token selector">.hvr-underline-from-right:hover:before, .hvr-underline-from-right:focus:before, .hvr-underline-from-right:active:before</span> <span class="token punctuation">{</span>
     <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>`
+<span class="token punctuation">}</span>`
 	}
-	// 85
+	// 86
 	if(e.target.className === "hvr-overline-from-left"){
 		repeatFun();
-		styletitle.innerHTML = "Overline From Left";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token selector">.hvr-overline-from-left</span> <span class="token punctuation">{</span>
@@ -4096,7 +4097,7 @@ effectsButtons.forEach((button =>{
     <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
     <span class="token property">right</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
     <span class="token property">top</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
-    <span class="token property">background</span><span class="token punctuation">:</span>  #009945<span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span>  #183199<span class="token punctuation">;</span>
     <span class="token property">height</span><span class="token punctuation">:</span> 4px<span class="token punctuation">;</span>
     <span class="token property">-webkit-transition-property</span><span class="token punctuation">:</span> right<span class="token punctuation">;</span>
     <span class="token property">transition-property</span><span class="token punctuation">:</span> right<span class="token punctuation">;</span>
@@ -4107,12 +4108,12 @@ effectsButtons.forEach((button =>{
 <span class="token punctuation">}</span>
 <span class="token selector">.hvr-overline-from-left:hover:before, .hvr-overline-from-left:focus:before, .hvr-overline-from-left:active:before</span> <span class="token punctuation">{</span>
     <span class="token property">right</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>`
+<span class="token punctuation">}</span>`
 	}
-	// 86
+	// 87
 	if(e.target.className === "hvr-overline-from-center"){
 		repeatFun();
-		styletitle.innerHTML = "Overline From Center";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token selector">.hvr-overline-from-center</span> <span class="token punctuation">{</span>
@@ -4132,7 +4133,7 @@ effectsButtons.forEach((button =>{
     <span class="token property">left</span><span class="token punctuation">:</span> 51%<span class="token punctuation">;</span>
     <span class="token property">right</span><span class="token punctuation">:</span> 51%<span class="token punctuation">;</span>
     <span class="token property">top</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
-    <span class="token property">background</span><span class="token punctuation">:</span>  #009945<span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span>  #183199<span class="token punctuation">;</span>
     <span class="token property">height</span><span class="token punctuation">:</span> 4px<span class="token punctuation">;</span>
     <span class="token property">-webkit-transition-property</span><span class="token punctuation">:</span> left<span class="token punctuation">,</span> right<span class="token punctuation">;</span>
     <span class="token property">transition-property</span><span class="token punctuation">:</span> left<span class="token punctuation">,</span> right<span class="token punctuation">;</span>
@@ -4144,12 +4145,12 @@ effectsButtons.forEach((button =>{
 <span class="token selector">.hvr-overline-from-center:hover:before, .hvr-overline-from-center:focus:before, .hvr-overline-from-center:active:before</span> <span class="token punctuation">{</span>
     <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
     <span class="token property">right</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>`
+<span class="token punctuation">}</span>`
 	}
-	// 87
+	// 88
 	if(e.target.className === "hvr-overline-from-right"){
 		repeatFun();
-		styletitle.innerHTML = "Overline From Right";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token selector">.hvr-overline-from-right</span> <span class="token punctuation">{</span>
@@ -4169,7 +4170,7 @@ effectsButtons.forEach((button =>{
     <span class="token property">left</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
     <span class="token property">right</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
     <span class="token property">top</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
-    <span class="token property">background</span><span class="token punctuation">:</span>  #009945<span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span>  #183199<span class="token punctuation">;</span>
     <span class="token property">height</span><span class="token punctuation">:</span> 4px<span class="token punctuation">;</span>
     <span class="token property">-webkit-transition-property</span><span class="token punctuation">:</span> left<span class="token punctuation">;</span>
     <span class="token property">transition-property</span><span class="token punctuation">:</span> left<span class="token punctuation">;</span>
@@ -4180,12 +4181,12 @@ effectsButtons.forEach((button =>{
 <span class="token punctuation">}</span>
 <span class="token selector">.hvr-overline-from-right:hover:before, .hvr-overline-from-right:focus:before, .hvr-overline-from-right:active:before</span> <span class="token punctuation">{</span>
     <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>`
+<span class="token punctuation">}</span>`
 	}
-	// 88
+	// 89
 	if(e.target.className === "hvr-reveal"){
 		repeatFun();
-		styletitle.innerHTML = "Reveal";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token selector">.hvr-reveal</span> <span class="token punctuation">{</span>
@@ -4206,7 +4207,7 @@ effectsButtons.forEach((button =>{
     <span class="token property">right</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
     <span class="token property">top</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
     <span class="token property">bottom</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
-    <span class="token property">border-color</span><span class="token punctuation">:</span>  #009945<span class="token punctuation">;</span>
+    <span class="token property">border-color</span><span class="token punctuation">:</span>  #183199<span class="token punctuation">;</span>
     <span class="token property">border-style</span><span class="token punctuation">:</span> solid<span class="token punctuation">;</span>
     <span class="token property">border-width</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
     <span class="token property">-webkit-transition-property</span><span class="token punctuation">:</span> border-width<span class="token punctuation">;</span>
@@ -4220,12 +4221,12 @@ effectsButtons.forEach((button =>{
     <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token property">border-width</span><span class="token punctuation">:</span> 4px<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>`
+<span class="token punctuation">}</span>`
 	}
-	//89
+	//90
 	if(e.target.className === "hvr-underline-reveal"){
 		repeatFun();
-		styletitle.innerHTML = "Underline Reveal";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token selector">.hvr-underline-reveal</span> <span class="token punctuation">{</span>
@@ -4245,7 +4246,7 @@ effectsButtons.forEach((button =>{
     <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
     <span class="token property">right</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
     <span class="token property">bottom</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
-    <span class="token property">background</span><span class="token punctuation">:</span>  #009945<span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span>  #183199<span class="token punctuation">;</span>
     <span class="token property">height</span><span class="token punctuation">:</span> 4px<span class="token punctuation">;</span>
     <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>4px<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>4px<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -4259,12 +4260,12 @@ effectsButtons.forEach((button =>{
 <span class="token selector">.hvr-underline-reveal:hover:before, .hvr-underline-reveal:focus:before, .hvr-underline-reveal:active:before</span> <span class="token punctuation">{</span>
     <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>`
+<span class="token punctuation">}</span>`
 	}
-	//90
+	//91
 	if(e.target.className === "hvr-overline-reveal"){
 		repeatFun();
-		styletitle.innerHTML = "Overline Reveal";
+    styletitle.innerHTML = e.target.innerText;
 		repeatCode();
 		cpitem.innerHTML +=
 `<span class="token selector">.hvr-overline-reveal</span> <span class="token punctuation">{</span>
@@ -4284,7 +4285,7 @@ effectsButtons.forEach((button =>{
     <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
     <span class="token property">right</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
     <span class="token property">top</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
-    <span class="token property">background</span><span class="token punctuation">:</span>  #009945<span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span>  #183199<span class="token punctuation">;</span>
     <span class="token property">height</span><span class="token punctuation">:</span> 4px<span class="token punctuation">;</span>
     <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>-4px<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>-4px<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -4298,31 +4299,680 @@ effectsButtons.forEach((button =>{
 <span class="token selector">.hvr-overline-reveal:hover:before, .hvr-overline-reveal:focus:before, .hvr-overline-reveal:active:before</span> <span class="token punctuation">{</span>
     <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code>`
+<span class="token punctuation">}</span>`
 	}
-	// 91
+  // SHADOW AND GLOW
+	// 92
+  if(e.target.className === "hvr-shadow"){
+    repeatFun();
+    styletitle.innerHTML = e.target.innerText;
+    repeatCode();
+    cpitem.innerHTML +=
+`<span class="token selector">.hvr-shadow</span> <span class="token punctuation">{</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+  <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 0 1px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-property</span><span class="token punctuation">:</span> box-shadow<span class="token punctuation">;</span>
+  <span class="token property">transition-property</span><span class="token punctuation">:</span> box-shadow<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.hvr-shadow:hover, .hvr-shadow:focus, .hvr-shadow:active</span> <span class="token punctuation">{</span>
+  <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 10px 10px -10px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0.5<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>`
+  }
+  //93
+  if(e.target.className === "hvr-grow-shadow"){
+    repeatFun();
+    styletitle.innerHTML = e.target.innerText;
+    repeatCode();
+    cpitem.innerHTML +=
+`<span class="token selector">.hvr-grow-shadow</span> <span class="token punctuation">{</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+  <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 0 1px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-property</span><span class="token punctuation">:</span> box-shadow<span class="token punctuation">,</span> transform<span class="token punctuation">;</span>
+  <span class="token property">transition-property</span><span class="token punctuation">:</span> box-shadow<span class="token punctuation">,</span> transform<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active</span> <span class="token punctuation">{</span>
+  <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 10px 10px -10px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0.5<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>1.1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>1.1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>`
+  }
+  //94
+  if(e.target.className === "hvr-float-shadow"){
+    repeatFun();
+    styletitle.innerHTML = e.target.innerText;
+    repeatCode();
+    cpitem.innerHTML +=
+`<span class="token selector">.hvr-float-shadow</span> <span class="token punctuation">{</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+  <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 0 1px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-property</span><span class="token punctuation">:</span> transform<span class="token punctuation">;</span>
+  <span class="token property">transition-property</span><span class="token punctuation">:</span> transform<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.hvr-float-shadow:before</span> <span class="token punctuation">{</span>
+  <span class="token property">pointer-events</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+  <span class="token property">z-index</span><span class="token punctuation">:</span> -1<span class="token punctuation">;</span>
+  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">;</span>
+  <span class="token property">top</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+  <span class="token property">left</span><span class="token punctuation">:</span> 5%<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 90%<span class="token punctuation">;</span>
+  <span class="token property">opacity</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">-webkit-radial-gradient</span><span class="token punctuation">(</span>center<span class="token punctuation">,</span> ellipse<span class="token punctuation">,</span> <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0.35<span class="token punctuation">)</span> 0%<span class="token punctuation">,</span> <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">)</span> 80%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">radial-gradient</span><span class="token punctuation">(</span>ellipse at center<span class="token punctuation">,</span> <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0.35<span class="token punctuation">)</span> 0%<span class="token punctuation">,</span> <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">)</span> 80%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">/* W3C */</span>
+  <span class="token property">-webkit-transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-property</span><span class="token punctuation">:</span> transform<span class="token punctuation">,</span> opacity<span class="token punctuation">;</span>
+  <span class="token property">transition-property</span><span class="token punctuation">:</span> transform<span class="token punctuation">,</span> opacity<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active</span> <span class="token punctuation">{</span>
+  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>-5px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>-5px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">/* move the element up by 5px */</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before</span> <span class="token punctuation">{</span>
+  <span class="token property">opacity</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>5px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>5px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">/* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */</span>
+<span class="token punctuation">}</span>`
+  }
+  // 95
+  if(e.target.className === "hvr-glow"){
+    repeatFun();
+    styletitle.innerHTML = e.target.innerText;
+    repeatCode();
+    cpitem.innerHTML +=
+`<span class="token selector">.hvr-glow</span> <span class="token punctuation">{</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+  <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 0 1px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-property</span><span class="token punctuation">:</span> box-shadow<span class="token punctuation">;</span>
+  <span class="token property">transition-property</span><span class="token punctuation">:</span> box-shadow<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.hvr-glow:hover, .hvr-glow:focus, .hvr-glow:active</span> <span class="token punctuation">{</span>
+  <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 0 8px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0.6<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>`
+  }
+  // 96
+  if(e.target.className === "hvr-shadow-radial"){
+    repeatFun();
+    styletitle.innerHTML = e.target.innerText;
+    repeatCode();
+    cpitem.innerHTML +=
+`<span class="token selector">.hvr-shadow-radial</span> <span class="token punctuation">{</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+  <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 0 1px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.hvr-shadow-radial:before, .hvr-shadow-radial:after</span> <span class="token punctuation">{</span>
+  <span class="token property">pointer-events</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">;</span>
+  <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+  <span class="token property">box-sizing</span><span class="token punctuation">:</span> border-box<span class="token punctuation">;</span>
+  <span class="token property">background-repeat</span><span class="token punctuation">:</span> no-repeat<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>
+  <span class="token property">opacity</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-property</span><span class="token punctuation">:</span> opacity<span class="token punctuation">;</span>
+  <span class="token property">transition-property</span><span class="token punctuation">:</span> opacity<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.hvr-shadow-radial:before</span> <span class="token punctuation">{</span>
+  <span class="token property">bottom</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">-webkit-radial-gradient</span><span class="token punctuation">(</span>50% 150%<span class="token punctuation">,</span> ellipse<span class="token punctuation">,</span> <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0.6<span class="token punctuation">)</span> 0%<span class="token punctuation">,</span> <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">)</span> 80%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">radial-gradient</span><span class="token punctuation">(</span>ellipse at 50% 150%<span class="token punctuation">,</span> <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0.6<span class="token punctuation">)</span> 0%<span class="token punctuation">,</span> <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">)</span> 80%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.hvr-shadow-radial:after</span> <span class="token punctuation">{</span>
+  <span class="token property">top</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">-webkit-radial-gradient</span><span class="token punctuation">(</span>50% -50%<span class="token punctuation">,</span> ellipse<span class="token punctuation">,</span> <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0.6<span class="token punctuation">)</span> 0%<span class="token punctuation">,</span> <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">)</span> 80%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">radial-gradient</span><span class="token punctuation">(</span>ellipse at 50% -50%<span class="token punctuation">,</span> <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0.6<span class="token punctuation">)</span> 0%<span class="token punctuation">,</span> <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">)</span> 80%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.hvr-shadow-radial:hover:before, .hvr-shadow-radial:focus:before, .hvr-shadow-radial:active:before, .hvr-shadow-radial:hover:after, .hvr-shadow-radial:focus:after, .hvr-shadow-radial:active:after</span> <span class="token punctuation">{</span>
+  <span class="token property">opacity</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>`
+  }
+  // 97
+  if(e.target.className === "hvr-box-shadow-outset"){
+    repeatFun();
+    styletitle.innerHTML = e.target.innerText;
+    repeatCode();
+    cpitem.innerHTML +=
+`<span class="token selector">.hvr-box-shadow-outset</span> <span class="token punctuation">{</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+  <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 0 1px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-property</span><span class="token punctuation">:</span> box-shadow<span class="token punctuation">;</span>
+  <span class="token property">transition-property</span><span class="token punctuation">:</span> box-shadow<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.hvr-box-shadow-outset:hover, .hvr-box-shadow-outset:focus, .hvr-box-shadow-outset:active</span> <span class="token punctuation">{</span>
+  <span class="token property">box-shadow</span><span class="token punctuation">:</span> 2px 2px 2px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0.6<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>`
+  }
+  //98
+  if(e.target.className === "hvr-box-shadow-inset"){
+    repeatFun();
+    styletitle.innerHTML = e.target.innerText;
+    repeatCode();
+    cpitem.innerHTML +=
+`<span class="token selector">.hvr-box-shadow-inset</span> <span class="token punctuation">{</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+  <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 0 1px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-property</span><span class="token punctuation">:</span> box-shadow<span class="token punctuation">;</span>
+  <span class="token property">transition-property</span><span class="token punctuation">:</span> box-shadow<span class="token punctuation">;</span>
+  <span class="token property">box-shadow</span><span class="token punctuation">:</span> inset 0 0 0 <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0.6<span class="token punctuation">)</span><span class="token punctuation">,</span> 0 0 1px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">/* Hack to improve aliasing on mobile/tablet devices */</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.hvr-box-shadow-inset:hover, .hvr-box-shadow-inset:focus, .hvr-box-shadow-inset:active</span> <span class="token punctuation">{</span>
+  <span class="token property">box-shadow</span><span class="token punctuation">:</span> inset 2px 2px 2px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0.6<span class="token punctuation">)</span><span class="token punctuation">,</span> 0 0 1px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">/* Hack to improve aliasing on mobile/tablet devices */</span>
+<span class="token punctuation">}</span>`
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  // SPEECH BUBBLES
+  //99
+  if(e.target.className === "hvr-bubble-top"){
+    repeatFun();
+    styletitle.innerHTML = e.target.innerText;
+    repeatCode();
+    cpitem.innerHTML +=
+`<span class="token selector">.hvr-bubble-top</span> <span class="token punctuation">{</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+  <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 0 1px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.hvr-bubble-top:before</span> <span class="token punctuation">{</span>
+  <span class="token property">pointer-events</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+  <span class="token property">z-index</span><span class="token punctuation">:</span> -1<span class="token punctuation">;</span>
+  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">;</span>
+  <span class="token property">border-style</span><span class="token punctuation">:</span> solid<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-property</span><span class="token punctuation">:</span> transform<span class="token punctuation">;</span>
+  <span class="token property">transition-property</span><span class="token punctuation">:</span> transform<span class="token punctuation">;</span>
+  <span class="token property">left</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span>50% - 10px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">top</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">border-width</span><span class="token punctuation">:</span> 0 10px 10px 10px<span class="token punctuation">;</span>
+  <span class="token property">border-color</span><span class="token punctuation">:</span> transparent transparent #e1e1e1 transparent<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.hvr-bubble-top:hover:before, .hvr-bubble-top:focus:before, .hvr-bubble-top:active:before</span> <span class="token punctuation">{</span>
+  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>-10px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>-10px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>`
+  }
+  // 100
+  if(e.target.className === "hvr-bubble-right"){
+    repeatFun();
+    styletitle.innerHTML = e.target.innerText;
+    repeatCode();
+    cpitem.innerHTML +=
+`<span class="token selector">.hvr-bubble-right</span> <span class="token punctuation">{</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+  <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 0 1px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.hvr-bubble-right:before</span> <span class="token punctuation">{</span>
+  <span class="token property">pointer-events</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+  <span class="token property">z-index</span><span class="token punctuation">:</span> -1<span class="token punctuation">;</span>
+  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">;</span>
+  <span class="token property">border-style</span><span class="token punctuation">:</span> solid<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-property</span><span class="token punctuation">:</span> transform<span class="token punctuation">;</span>
+  <span class="token property">transition-property</span><span class="token punctuation">:</span> transform<span class="token punctuation">;</span>
+  <span class="token property">top</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span>50% - 10px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">right</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">border-width</span><span class="token punctuation">:</span> 10px 0 10px 10px<span class="token punctuation">;</span>
+  <span class="token property">border-color</span><span class="token punctuation">:</span> transparent transparent transparent #e1e1e1<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.hvr-bubble-right:hover:before, .hvr-bubble-right:focus:before, .hvr-bubble-right:active:before</span> <span class="token punctuation">{</span>
+  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span>10px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span>10px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>`
+  }
+  //101
+  if(e.target.className === "hvr-bubble-bottom"){
+    repeatFun();
+    styletitle.innerHTML = e.target.innerText;
+    repeatCode();
+    cpitem.innerHTML +=
+`<span class="token selector">.hvr-bubble-bottom</span> <span class="token punctuation">{</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+  <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 0 1px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.hvr-bubble-bottom:before</span> <span class="token punctuation">{</span>
+  <span class="token property">pointer-events</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+  <span class="token property">z-index</span><span class="token punctuation">:</span> -1<span class="token punctuation">;</span>
+  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">;</span>
+  <span class="token property">border-style</span><span class="token punctuation">:</span> solid<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-property</span><span class="token punctuation">:</span> transform<span class="token punctuation">;</span>
+  <span class="token property">transition-property</span><span class="token punctuation">:</span> transform<span class="token punctuation">;</span>
+  <span class="token property">left</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span>50% - 10px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">bottom</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">border-width</span><span class="token punctuation">:</span> 10px 10px 0 10px<span class="token punctuation">;</span>
+  <span class="token property">border-color</span><span class="token punctuation">:</span> #e1e1e1 transparent transparent transparent<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.hvr-bubble-bottom:hover:before, .hvr-bubble-bottom:focus:before, .hvr-bubble-bottom:active:before</span> <span class="token punctuation">{</span>
+  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>10px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>10px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>`
+  }
+  //102
+  if(e.target.className === "hvr-bubble-left"){
+    repeatFun();
+    styletitle.innerHTML = e.target.innerText;
+    repeatCode();
+    cpitem.innerHTML +=
+`<span class="token selector">.hvr-bubble-left</span> <span class="token punctuation">{</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+  <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 0 1px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.hvr-bubble-left:before</span> <span class="token punctuation">{</span>
+  <span class="token property">pointer-events</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+  <span class="token property">z-index</span><span class="token punctuation">:</span> -1<span class="token punctuation">;</span>
+  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">;</span>
+  <span class="token property">border-style</span><span class="token punctuation">:</span> solid<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-property</span><span class="token punctuation">:</span> transform<span class="token punctuation">;</span>
+  <span class="token property">transition-property</span><span class="token punctuation">:</span> transform<span class="token punctuation">;</span>
+  <span class="token property">top</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span>50% - 10px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">border-width</span><span class="token punctuation">:</span> 10px 10px 10px 0<span class="token punctuation">;</span>
+  <span class="token property">border-color</span><span class="token punctuation">:</span> transparent #e1e1e1 transparent transparent<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.hvr-bubble-left:hover:before, .hvr-bubble-left:focus:before, .hvr-bubble-left:active:before</span> <span class="token punctuation">{</span>
+  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span>-10px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span>-10px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>`
+  }
+  //103
+  if(e.target.className === "hvr-bubble-float-top"){
+    repeatFun();
+    styletitle.innerHTML = e.target.innerText;
+    repeatCode();
+    cpitem.innerHTML +=
+`<span class="token selector">.hvr-bubble-float-top</span> <span class="token punctuation">{</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+  <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 0 1px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-property</span><span class="token punctuation">:</span> transform<span class="token punctuation">;</span>
+  <span class="token property">transition-property</span><span class="token punctuation">:</span> transform<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.hvr-bubble-float-top:before</span> <span class="token punctuation">{</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+  <span class="token property">z-index</span><span class="token punctuation">:</span> -1<span class="token punctuation">;</span>
+  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">;</span>
+  <span class="token property">left</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span>50% - 10px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">top</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">border-style</span><span class="token punctuation">:</span> solid<span class="token punctuation">;</span>
+  <span class="token property">border-width</span><span class="token punctuation">:</span> 0 10px 10px 10px<span class="token punctuation">;</span>
+  <span class="token property">border-color</span><span class="token punctuation">:</span> transparent transparent #e1e1e1 transparent<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-property</span><span class="token punctuation">:</span> transform<span class="token punctuation">;</span>
+  <span class="token property">transition-property</span><span class="token punctuation">:</span> transform<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.hvr-bubble-float-top:hover, .hvr-bubble-float-top:focus, .hvr-bubble-float-top:active</span> <span class="token punctuation">{</span>
+  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>10px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>10px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.hvr-bubble-float-top:hover:before, .hvr-bubble-float-top:focus:before, .hvr-bubble-float-top:active:before</span> <span class="token punctuation">{</span>
+  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>-10px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>-10px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>`
+  }
+  // 104
+  if(e.target.className === "hvr-bubble-float-right"){
+    repeatFun();
+    styletitle.innerHTML = e.target.innerText;
+    repeatCode();
+    cpitem.innerHTML +=
+`<span class="token selector">.hvr-bubble-float-right</span> <span class="token punctuation">{</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+  <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 0 1px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-property</span><span class="token punctuation">:</span> transform<span class="token punctuation">;</span>
+  <span class="token property">transition-property</span><span class="token punctuation">:</span> transform<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.hvr-bubble-float-right:before</span> <span class="token punctuation">{</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+  <span class="token property">z-index</span><span class="token punctuation">:</span> -1<span class="token punctuation">;</span>
+  <span class="token property">top</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span>50% - 10px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">right</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">;</span>
+  <span class="token property">border-style</span><span class="token punctuation">:</span> solid<span class="token punctuation">;</span>
+  <span class="token property">border-width</span><span class="token punctuation">:</span> 10px 0 10px 10px<span class="token punctuation">;</span>
+  <span class="token property">border-color</span><span class="token punctuation">:</span> transparent transparent transparent #e1e1e1<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-property</span><span class="token punctuation">:</span> transform<span class="token punctuation">;</span>
+  <span class="token property">transition-property</span><span class="token punctuation">:</span> transform<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.hvr-bubble-float-right:hover, .hvr-bubble-float-right:focus, .hvr-bubble-float-right:active</span> <span class="token punctuation">{</span>
+  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span>-10px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span>-10px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.hvr-bubble-float-right:hover:before, .hvr-bubble-float-right:focus:before, .hvr-bubble-float-right:active:before</span> <span class="token punctuation">{</span>
+  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span>10px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span>10px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>`
+  }
+  // 105
+  if(e.target.className === "hvr-bubble-float-bottom"){
+    repeatFun();
+    styletitle.innerHTML = e.target.innerText;
+    repeatCode();
+    cpitem.innerHTML +=
+`<span class="token selector">.hvr-bubble-float-bottom</span> <span class="token punctuation">{</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+  <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 0 1px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-property</span><span class="token punctuation">:</span> transform<span class="token punctuation">;</span>
+  <span class="token property">transition-property</span><span class="token punctuation">:</span> transform<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.hvr-bubble-float-bottom:before</span> <span class="token punctuation">{</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+  <span class="token property">z-index</span><span class="token punctuation">:</span> -1<span class="token punctuation">;</span>
+  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">;</span>
+  <span class="token property">left</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span>50% - 10px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">bottom</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">border-style</span><span class="token punctuation">:</span> solid<span class="token punctuation">;</span>
+  <span class="token property">border-width</span><span class="token punctuation">:</span> 10px 10px 0 10px<span class="token punctuation">;</span>
+  <span class="token property">border-color</span><span class="token punctuation">:</span> #e1e1e1 transparent transparent transparent<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-property</span><span class="token punctuation">:</span> transform<span class="token punctuation">;</span>
+  <span class="token property">transition-property</span><span class="token punctuation">:</span> transform<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.hvr-bubble-float-bottom:hover, .hvr-bubble-float-bottom:focus, .hvr-bubble-float-bottom:active</span> <span class="token punctuation">{</span>
+  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>-10px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>-10px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.hvr-bubble-float-bottom:hover:before, .hvr-bubble-float-bottom:focus:before, .hvr-bubble-float-bottom:active:before</span> <span class="token punctuation">{</span>
+  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>10px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>10px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>`
+  }
+  //106
+  if(e.target.className === "hvr-bubble-float-left"){
+    repeatFun();
+    styletitle.innerHTML = e.target.innerText;
+    repeatCode();
+    cpitem.innerHTML +=
+`<span class="token selector">.hvr-bubble-float-left</span> <span class="token punctuation">{</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+  <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 0 1px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-property</span><span class="token punctuation">:</span> transform<span class="token punctuation">;</span>
+  <span class="token property">transition-property</span><span class="token punctuation">:</span> transform<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.hvr-bubble-float-left:before</span> <span class="token punctuation">{</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+  <span class="token property">z-index</span><span class="token punctuation">:</span> -1<span class="token punctuation">;</span>
+  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">;</span>
+  <span class="token property">top</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span>50% - 10px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">border-style</span><span class="token punctuation">:</span> solid<span class="token punctuation">;</span>
+  <span class="token property">border-width</span><span class="token punctuation">:</span> 10px 10px 10px 0<span class="token punctuation">;</span>
+  <span class="token property">border-color</span><span class="token punctuation">:</span> transparent #e1e1e1 transparent transparent<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-property</span><span class="token punctuation">:</span> transform<span class="token punctuation">;</span>
+  <span class="token property">transition-property</span><span class="token punctuation">:</span> transform<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.hvr-bubble-float-left:hover, .hvr-bubble-float-left:focus, .hvr-bubble-float-left:active</span> <span class="token punctuation">{</span>
+  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span>10px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span>10px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.hvr-bubble-float-left:hover:before, .hvr-bubble-float-left:focus:before, .hvr-bubble-float-left:active:before</span> <span class="token punctuation">{</span>
+  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span>-10px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span>-10px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>`
+  }
+  // CURLS
+  // 107
+  if(e.target.className === "hvr-curl-top-left"){
+    repeatFun();
+    styletitle.innerHTML = e.target.innerText;
+    repeatCode();
+    cpitem.innerHTML +=
+`<span class="token selector">.hvr-curl-top-left</span> <span class="token punctuation">{</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+  <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 0 1px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.hvr-curl-top-left:before</span> <span class="token punctuation">{</span>
+  <span class="token property">pointer-events</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">top</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span>
+  <span class="token comment">/* IE9 */</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">linear-gradient</span><span class="token punctuation">(</span>135deg<span class="token punctuation">,</span> white 45%<span class="token punctuation">,</span> #aaa 50%<span class="token punctuation">,</span> #ccc 56%<span class="token punctuation">,</span> white 80%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">filter</span><span class="token punctuation">:</span> <span class="token property">progid</span><span class="token punctuation">:</span>DXImageTransform.Microsoft.<span class="token function">gradient</span><span class="token punctuation">(</span>GradientType=0<span class="token punctuation">,</span>startColorstr=<span class="token string">'#ffffff'</span><span class="token punctuation">,</span> endColorstr=<span class="token string">'#000000'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">/*For IE7-8-9*/</span>
+  <span class="token property">z-index</span><span class="token punctuation">:</span> 1000<span class="token punctuation">;</span>
+  <span class="token property">box-shadow</span><span class="token punctuation">:</span> 1px 1px 1px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0.4<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-property</span><span class="token punctuation">:</span> width<span class="token punctuation">,</span> height<span class="token punctuation">;</span>
+  <span class="token property">transition-property</span><span class="token punctuation">:</span> width<span class="token punctuation">,</span> height<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.hvr-curl-top-left:hover:before, .hvr-curl-top-left:focus:before, .hvr-curl-top-left:active:before</span> <span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 25px<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 25px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>`
+  }
+  //108
+  if(e.target.className === "hvr-curl-top-right"){
+    repeatFun();
+    styletitle.innerHTML = e.target.innerText;
+    repeatCode();
+    cpitem.innerHTML +=
+`<span class="token selector">.hvr-curl-top-right</span> <span class="token punctuation">{</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+  <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 0 1px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.hvr-curl-top-right:before</span> <span class="token punctuation">{</span>
+  <span class="token property">pointer-events</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">top</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">right</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span>
+  <span class="token comment">/* IE9 */</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">linear-gradient</span><span class="token punctuation">(</span>225deg<span class="token punctuation">,</span> white 45%<span class="token punctuation">,</span> #aaa 50%<span class="token punctuation">,</span> #ccc 56%<span class="token punctuation">,</span> white 80%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">box-shadow</span><span class="token punctuation">:</span> -1px 1px 1px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0.4<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-property</span><span class="token punctuation">:</span> width<span class="token punctuation">,</span> height<span class="token punctuation">;</span>
+  <span class="token property">transition-property</span><span class="token punctuation">:</span> width<span class="token punctuation">,</span> height<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.hvr-curl-top-right:hover:before, .hvr-curl-top-right:focus:before, .hvr-curl-top-right:active:before</span> <span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 25px<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 25px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>`
+  }
+  // 109
+  if(e.target.className === "hvr-curl-bottom-right"){
+    repeatFun();
+    styletitle.innerHTML = e.target.innerText;
+    repeatCode();
+    cpitem.innerHTML +=
+`<span class="token selector">.hvr-curl-bottom-right</span> <span class="token punctuation">{</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+  <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 0 1px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.hvr-curl-bottom-right:before</span> <span class="token punctuation">{</span>
+  <span class="token property">pointer-events</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">bottom</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">right</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span>
+  <span class="token comment">/* IE9 */</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">linear-gradient</span><span class="token punctuation">(</span>315deg<span class="token punctuation">,</span> white 45%<span class="token punctuation">,</span> #aaa 50%<span class="token punctuation">,</span> #ccc 56%<span class="token punctuation">,</span> white 80%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">box-shadow</span><span class="token punctuation">:</span> -1px -1px 1px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0.4<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-property</span><span class="token punctuation">:</span> width<span class="token punctuation">,</span> height<span class="token punctuation">;</span>
+  <span class="token property">transition-property</span><span class="token punctuation">:</span> width<span class="token punctuation">,</span> height<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.hvr-curl-bottom-right:hover:before, .hvr-curl-bottom-right:focus:before, .hvr-curl-bottom-right:active:before</span> <span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 25px<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 25px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>`
+  }
+  //110
+  if(e.target.className === "hvr-curl-bottom-left"){
+    repeatFun();
+    styletitle.innerHTML = e.target.innerText;
+    repeatCode();
+    cpitem.innerHTML +=
+`<span class="token selector">.hvr-curl-bottom-left</span> <span class="token punctuation">{</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+  <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">perspective</span><span class="token punctuation">(</span>1px<span class="token punctuation">)</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 0 1px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.hvr-curl-bottom-left:before</span> <span class="token punctuation">{</span>
+  <span class="token property">pointer-events</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">bottom</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span>
+  <span class="token comment">/* IE9 */</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">linear-gradient</span><span class="token punctuation">(</span>45deg<span class="token punctuation">,</span> white 45%<span class="token punctuation">,</span> #aaa 50%<span class="token punctuation">,</span> #ccc 56%<span class="token punctuation">,</span> white 80%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">box-shadow</span><span class="token punctuation">:</span> 1px -1px 1px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0.4<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">transition-duration</span><span class="token punctuation">:</span> 0.3s<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition-property</span><span class="token punctuation">:</span> width<span class="token punctuation">,</span> height<span class="token punctuation">;</span>
+  <span class="token property">transition-property</span><span class="token punctuation">:</span> width<span class="token punctuation">,</span> height<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.hvr-curl-bottom-left:hover:before, .hvr-curl-bottom-left:focus:before, .hvr-curl-bottom-left:active:before</span> <span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 25px<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 25px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>`
+  }
+  f
   });
 
 }));
