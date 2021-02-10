@@ -4972,7 +4972,7 @@ effectsButtons.forEach((button =>{
   <span class="token property">height</span><span class="token punctuation">:</span> 25px<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>`
   }
-  
+
   });
 }));
 
