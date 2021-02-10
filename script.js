@@ -5018,7 +5018,7 @@ clipboard.addEventListener('click', () =>{
     tooltip.classList.add("tooltip-display");
     setTimeout(() =>{
     tooltip.classList.remove("tooltip-display");
-    },1000);
+    },2000);
   }
 });
 
