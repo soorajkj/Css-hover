@@ -9,9 +9,15 @@ const styletitle = document.querySelector(".popup-head h2");
 
 const popupClose = document.querySelector(".popup-close");
 const searchInput = document.querySelector('#findEffects');
+const showcase = document.querySelector('.showcase');
+
+// const fa = Array.from(effects.children)
+// .filter((term) => term.tagName === "A" )
+// console.log(fa);
 
 findBtn = (searchTerm) =>{
   Array.from(effects.children)
+  .filter((term) => term.tagName === "A" )
   .filter((term) => !term.innerText.toLowerCase().includes(searchTerm))
   .forEach((term) => term.classList.add('hide'));
   
@@ -23,7 +29,13 @@ findBtn = (searchTerm) =>{
 searchInput.addEventListener("keyup", () =>{
   const searchTerm = searchInput.findinput.value.toLowerCase().trim();
   findBtn(searchTerm);
-});
+  if(searchTerm.length){
+    showcase.style.display = "none"
+  }
+  else{
+    showcase.style.display = "flex"
+  }
+  });
 
 popupClose.addEventListener("click", () =>{
     if(popupWrapper.classList.contains("popup-wrapper-open")){
