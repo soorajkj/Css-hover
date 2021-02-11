@@ -94,7 +94,7 @@ header i{
 .showcase::after{
   content: '';
   position: absolute;
-  background-image: url(chris-ried-ieic5Tq8YMk-unsplash.jpg);
+  background-image: url(./chris-ried-ieic5Tq8YMk-unsplash.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
